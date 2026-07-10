@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects | Yen-Wen Lu</title><meta name="description" content="Yen-Wen Lu Intelligent Microsystems Research Group at National Taiwan University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body><div id="header"></div>
+<main><section class="page-hero"><div class="container"><p class="eyebrow">YEN-WEN LU · NTU</p><h1 data-t="projectPageTitle"></h1><p data-t="projectPageIntro"></p></div></section>
+<section class="section"><div class="container"><div id="filters" class="filters"></div><div id="projectList" class="grid project-grid"></div></div></section></main><div id="footer"></div>
+<script src="data/site-data.js"></script><script src="data/i18n.js"></script><script src="app.js"></script>
+<script>function renderPage(){document.querySelector("#header").innerHTML=header("projects");document.querySelector("#footer").innerHTML=footer();setStaticText();initNav();
+const cats=[...new Set(SITE_DATA.projects.map(p=>text(p.category,p.categoryZh)))];
+document.querySelector("#filters").innerHTML=`<button class="filter active" data-cat="all">${t().filterAll}</button>`+cats.map(c=>`<button class="filter" data-cat="${c}">${c}</button>`).join("");
+function draw(cat="all"){document.querySelector("#projectList").innerHTML=SITE_DATA.projects.filter(p=>cat==="all"||text(p.category,p.categoryZh)===cat).map(projectCard).join("")||`<p>${t().noData}</p>`}
+draw();document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");draw(b.dataset.cat)});
+}renderPage();</script></body></html>

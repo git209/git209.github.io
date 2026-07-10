@@ -1,47 +1,49 @@
-# Yen-Wen Lu Academic Website
+# Yen-Wen Lu Academic Website V2
 
-A responsive single-page academic website prepared for GitHub Pages.
+A bilingual, responsive, data-driven static website for GitHub Pages.
 
-## Files
+## Pages
 
-- `index.html` — website content
-- `styles.css` — layout, colors, responsive design
-- `script.js` — mobile navigation and footer year
-- `assets/hero-bg.png` — homepage hero background
+- `index.html`
+- `projects.html`
+- `people.html`
+- `gallery.html`
+- `news.html`
+- `teaching.html`
+- `join.html`
 
-## Publish with GitHub Pages
+## Data-driven management
 
-1. Create a new public GitHub repository, for example:
-   `yenwenlu.github.io`
-2. Upload all files in this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Save. GitHub will provide the website URL after deployment.
+Edit only:
 
-For a repository named `yenwenlu.github.io`, the URL will normally be:
+- `data/site-data.js` — people, projects, gallery, news, teaching, contact profile
+- `data/i18n.js` — interface text in English and Traditional Chinese
 
-`https://yenwenlu.github.io`
+Page layouts are generated automatically from those data files.
 
-For another repository name, for example `academic-site`, it will normally be:
+## Important updates before publication
 
-`https://yenwenlu.github.io/academic-site/`
+In `data/site-data.js`, replace:
 
-## Before publishing
+- `your-email@ntu.edu.tw`
+- department / institute name
+- Google Scholar URL
+- ORCID URL
+- LinkedIn URL
+- generic team groups with individual current member records when ready
+- any news descriptions that need precise verification
 
-Update these placeholders in `index.html`:
+## Replace your existing GitHub Pages site
 
-- Department / institute name
-- Email address
-- Google Scholar link
-- ORCID link
-- LinkedIn link
-- Verified publication, patent, project, and mentoring numbers
-- News entries
-- Featured-project links
+1. Back up the current repository.
+2. Delete the old website files, or overwrite files with this V2 package.
+3. Upload the contents of this folder to the root of `git209.github.io`.
+4. Commit directly to `main`.
+5. Wait for `Actions → Pages build and deployment` to show success.
+6. Open `https://git209.github.io/` and hard-refresh with `Ctrl + Shift + R`.
 
-## Optional custom domain
+## Images from Wix
 
-Add your domain in **Settings → Pages → Custom domain**.
+Selected legacy images use the public Wix image URLs currently associated with the user's existing website. For long-term independence, download the original image files from Wix and replace each URL in `data/site-data.js` with a local path such as:
+
+`assets/gallery/photo-name.jpg`

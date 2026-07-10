@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News | Yen-Wen Lu</title><meta name="description" content="Yen-Wen Lu Intelligent Microsystems Research Group at National Taiwan University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body><div id="header"></div>
+<main><section class="page-hero"><div class="container"><p class="eyebrow">YEN-WEN LU · NTU</p><h1 data-t="newsPageTitle"></h1><p data-t="newsPageIntro"></p></div></section>
+<section class="section"><div class="container"><div id="newsList"></div></div></section></main><div id="footer"></div>
+<script src="data/site-data.js"></script><script src="data/i18n.js"></script><script src="app.js"></script>
+<script>function renderPage(){document.querySelector("#header").innerHTML=header("news");document.querySelector("#footer").innerHTML=footer();setStaticText();initNav();document.querySelector("#newsList").innerHTML=SITE_DATA.news.map(newsItem).join("");}renderPage();</script></body></html>

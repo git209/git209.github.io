@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teaching | Yen-Wen Lu</title><meta name="description" content="Yen-Wen Lu Intelligent Microsystems Research Group at National Taiwan University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body><div id="header"></div>
+<main><section class="page-hero"><div class="container"><p class="eyebrow">YEN-WEN LU · NTU</p><h1 data-t="teachingPageTitle"></h1><p data-t="teachingPageIntro"></p></div></section>
+<section class="section"><div class="container"><div id="teachingList" class="grid project-grid"></div></div></section></main><div id="footer"></div>
+<script src="data/site-data.js"></script><script src="data/i18n.js"></script><script src="app.js"></script>
+<script>function renderPage(){document.querySelector("#header").innerHTML=header("teaching");document.querySelector("#footer").innerHTML=footer();setStaticText();initNav();
+document.querySelector("#teachingList").innerHTML=SITE_DATA.teaching.map(x=>`<article class="card"><div class="card-body"><span class="pill">${t().teaching}</span><h3>${text(x.title,x.titleZh)}</h3><p>${text(x.text,x.textZh)}</p></div></article>`).join("");
+}renderPage();</script></body></html>
