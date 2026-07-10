@@ -1,0 +1,90 @@
+[
+  {
+    "id": "yen-wen-lu",
+    "name": "Prof. Yen-Wen Lu",
+    "nameZh": "盧彥文 教授",
+    "group": "Principal Investigator",
+    "groupZh": "主持人",
+    "image": "../assets/people/lab-group-2023.webp",
+    "research": [
+      "Microfluidics",
+      "Biomedical MEMS",
+      "AI Healthcare",
+      "Soft Robotics",
+      "Thermal-fluid Engineering"
+    ],
+    "researchZh": [
+      "微流體",
+      "生醫微機電",
+      "智慧醫療",
+      "軟性機器人",
+      "熱流工程"
+    ],
+    "bio": "Professor Lu leads interdisciplinary research connecting microsystems, sensing, artificial intelligence, and translational engineering.",
+    "bioZh": "盧教授帶領跨領域研究，整合微系統、感測、人工智慧與工程轉譯應用。",
+    "email": "your-email@ntu.edu.tw"
+  },
+  {
+    "id": "postdoctoral-team",
+    "name": "Postdoctoral & Research Team",
+    "nameZh": "博士後與研究團隊",
+    "group": "Researchers",
+    "groupZh": "研究人員",
+    "image": "../assets/people/international-team-2022.webp",
+    "research": [
+      "System Integration",
+      "Experimental Validation",
+      "International Collaboration"
+    ],
+    "researchZh": [
+      "系統整合",
+      "實驗驗證",
+      "國際合作"
+    ],
+    "bio": "Researchers contribute independent project execution, mentoring, and system-level integration.",
+    "bioZh": "研究人員負責獨立執行計畫、協助指導與系統層級整合。",
+    "email": ""
+  },
+  {
+    "id": "graduate-students",
+    "name": "Graduate Students",
+    "nameZh": "研究生",
+    "group": "Students",
+    "groupZh": "學生",
+    "image": "../assets/people/students-2023.webp",
+    "research": [
+      "Device Design",
+      "Data Analysis",
+      "Scientific Writing"
+    ],
+    "researchZh": [
+      "元件設計",
+      "資料分析",
+      "科學寫作"
+    ],
+    "bio": "Graduate students receive training from experimental design through publication and technology demonstration.",
+    "bioZh": "研究生接受從實驗設計、研究執行到論文發表與技術展示的完整訓練。",
+    "email": ""
+  },
+  {
+    "id": "alumni-network",
+    "name": "Alumni Network",
+    "nameZh": "校友網絡",
+    "group": "Alumni",
+    "groupZh": "校友",
+    "image": "../assets/people/alumni-history-2007.webp",
+    "research": [
+      "Industry",
+      "Academia",
+      "International Graduate Study"
+    ],
+    "researchZh": [
+      "產業",
+      "學術",
+      "國際深造"
+    ],
+    "bio": "Alumni continue their careers in leading technology companies, research institutes, and universities.",
+    "bioZh": "校友於指標性科技企業、研究機構與大學持續發展。",
+    "email": ""
+  }
+]

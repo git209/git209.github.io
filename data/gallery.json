@@ -1,0 +1,50 @@
+[
+  {
+    "image": "assets/gallery/xmas-2024.webp",
+    "title": "Christmas Lab Gathering",
+    "titleZh": "實驗室聖誕聚會",
+    "year": "2024"
+  },
+  {
+    "image": "assets/gallery/halloween-2023.webp",
+    "title": "Halloween in the Lab",
+    "titleZh": "實驗室萬聖節",
+    "year": "2023"
+  },
+  {
+    "image": "assets/gallery/movie-night-2025.webp",
+    "title": "Lab Movie Night",
+    "titleZh": "實驗室電影之夜",
+    "year": "2025"
+  },
+  {
+    "image": "assets/gallery/ntu-marathon-2015.webp",
+    "title": "NTU Marathon",
+    "titleZh": "台大馬拉松",
+    "year": "2015"
+  },
+  {
+    "image": "assets/gallery/international-visit-2018.webp",
+    "title": "International Visit",
+    "titleZh": "國際學術交流",
+    "year": "2018"
+  },
+  {
+    "image": "assets/gallery/rit-bbq-2008.webp",
+    "title": "RIT Lab Gathering",
+    "titleZh": "RIT 實驗室聚會",
+    "year": "2008"
+  },
+  {
+    "image": "assets/gallery/defense.webp",
+    "title": "Student Defense Milestone",
+    "titleZh": "學生口試里程碑",
+    "year": ""
+  },
+  {
+    "image": "assets/research/cleanroom.webp",
+    "title": "Cleanroom Research",
+    "titleZh": "無塵室研究",
+    "year": ""
+  }
+]

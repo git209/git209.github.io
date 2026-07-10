@@ -1,49 +1,22 @@
-# Yen-Wen Lu Academic Website V2
+# Yen-Wen Lu Academic Website V3
 
-A bilingual, responsive, data-driven static website for GitHub Pages.
+Features:
+1. Dedicated project pages
+2. Filterable publications database
+3. Individual people profile pages
+4. Categorized and filterable news
+5. Centralized JSON data for maintenance
 
-## Pages
+Edit:
+- data/projects.json
+- data/people.json
+- data/publications.json
+- data/news.json
 
-- `index.html`
-- `projects.html`
-- `people.html`
-- `gallery.html`
-- `news.html`
-- `teaching.html`
-- `join.html`
+The publication records are placeholders and must be replaced with verified metadata before formal launch.
 
-## Data-driven management
+Upload the contents of this folder directly to the root of git209.github.io.
 
-Edit only:
 
-- `data/site-data.js` — people, projects, gallery, news, teaching, contact profile
-- `data/i18n.js` — interface text in English and Traditional Chinese
-
-Page layouts are generated automatically from those data files.
-
-## Important updates before publication
-
-In `data/site-data.js`, replace:
-
-- `your-email@ntu.edu.tw`
-- department / institute name
-- Google Scholar URL
-- ORCID URL
-- LinkedIn URL
-- generic team groups with individual current member records when ready
-- any news descriptions that need precise verification
-
-## Replace your existing GitHub Pages site
-
-1. Back up the current repository.
-2. Delete the old website files, or overwrite files with this V2 package.
-3. Upload the contents of this folder to the root of `git209.github.io`.
-4. Commit directly to `main`.
-5. Wait for `Actions → Pages build and deployment` to show success.
-6. Open `https://git209.github.io/` and hard-refresh with `Ctrl + Shift + R`.
-
-## Images from Wix
-
-Selected legacy images use the public Wix image URLs currently associated with the user's existing website. For long-term independence, download the original image files from Wix and replace each URL in `data/site-data.js` with a local path such as:
-
-`assets/gallery/photo-name.jpg`
+## Local image integration
+All selected photographs from WebsiteIMG.zip have been converted to optimized WebP files and stored under assets/research, assets/people, assets/news, and assets/gallery. The site no longer depends on Wix image URLs.
