@@ -4,9 +4,9 @@ window.SITE_DATA = {
     nameZh: "盧彥文",
     title: "Professor, National Taiwan University",
     titleZh: "國立臺灣大學 教授",
-    email: "your-email@ntu.edu.tw",
-    department: "Department / Institute — please update",
-    departmentZh: "系所名稱—請更新",
+    email: "yenwenlu@ntu.edu.tw",
+    department: "Department of Biomechatronics Engineering",
+    departmentZh: "生物機電工程系",
     scholar: "#",
     orcid: "#",
     linkedin: "#"
