@@ -1,46 +1,7 @@
 [
-  {
-    "year": 2023,
-    "topic": "Digital Microfluidics",
-    "topicZh": "數位微流體",
-    "title": "Disk-TENG-powered digital microfluidics — verify full bibliographic title",
-    "journal": "Nano Energy",
-    "authors": "Yen-Wen Lu and collaborators",
-    "doi": "#",
-    "status": "Verified journal and year; full citation requires confirmation.",
-    "statusZh": "期刊與年份已知；完整書目仍需確認。"
-  },
-  {
-    "year": 2023,
-    "topic": "Wearable Sensors",
-    "topicZh": "穿戴式感測",
-    "title": "Wearable high-sensitivity tactile sensor — verify full bibliographic title",
-    "journal": "Biosensors",
-    "authors": "Yen-Wen Lu and collaborators",
-    "doi": "#",
-    "status": "Verified journal and year; full citation requires confirmation.",
-    "statusZh": "期刊與年份已知；完整書目仍需確認。"
-  },
-  {
-    "year": 2025,
-    "topic": "Biomedical Microfluidics",
-    "topicZh": "生醫微流體",
-    "title": "Collaborative Lab on a Chip publication — verify full bibliographic title",
-    "journal": "Lab on a Chip",
-    "authors": "Yen-Wen Lu laboratory and collaborators",
-    "doi": "#",
-    "status": "Journal and approximate timing known; complete citation pending.",
-    "statusZh": "已知期刊與大致時間；完整引用待確認。"
-  },
-  {
-    "year": 2026,
-    "topic": "AI Healthcare",
-    "topicZh": "智慧醫療",
-    "title": "Online hemodialysis monitoring with optical sensing and machine learning",
-    "journal": "Metadata to verify",
-    "authors": "Yen-Wen Lu and collaborators",
-    "doi": "#",
-    "status": "Research content verified; publication metadata pending.",
-    "statusZh": "研究內容已確認；出版資訊待確認。"
-  }
+  {"year":2024,"topic":"Microfluidics","topicZh":"微流體","title":"Pipette-operable microfluidic devices with hydrophobic valves in sequential dispensing with various liquid samples: multiplex disease assay by RT-LAMP","journal":"Lab on a Chip","authors":"Yen-Wei Chang, Jhih-Pu Lin, Shiu-Jie Ling, Yen-Chun Chen, Helene Minyi Liu and Yen-Wen Lu","doi":"https://doi.org/10.1039/D4LC00209A","status":"Representative publication","statusZh":"代表性期刊論文","image":"assets/research/lab-on-a-chip-concept.jpg"},
+  {"year":2023,"topic":"Digital Microfluidics","topicZh":"數位微流體","title":"Self-powered digital microfluidics driven by rotational triboelectric nanogenerator","journal":"Nano Energy","authors":"Yen-Wen Lu and collaborators","doi":"#","status":"Representative publication","statusZh":"代表性期刊論文","image":"assets/research/dmf.webp"},
+  {"year":2023,"topic":"Wearable Sensors","topicZh":"穿戴式感測","title":"Skin-inspired tactile sensor on cellulose fiber substrates with interfacial microstructure for health monitoring and guitar posture feedback","journal":"Biosensors","authors":"Yen-Wen Lu and collaborators","doi":"#","status":"Representative publication","statusZh":"代表性期刊論文","image":"assets/research/tactile-journal-cover.jpg"},
+  {"year":2022,"topic":"AI Healthcare","topicZh":"智慧醫療","title":"Optoelectronic online monitoring system for hemodialysis and its data analysis","journal":"Sensors and Actuators B: Chemical","authors":"Yen-Wen Lu and collaborators","doi":"https://doi.org/10.1016/j.snb.2022.131859","status":"Representative publication","statusZh":"代表性期刊論文","image":"assets/research/innovation-awards-2025.jpg"},
+  {"year":2026,"topic":"Energy Harvesting","topicZh":"能量擷取","title":"A Portable and Modular Platform for Integrated TENG Characterization: Resolving the Effect of Surface Roughness","journal":"IEEE Transactions on Instrumentation and Measurement","authors":"Vishal Kumar and Yen-Wen Lu","doi":"#","status":"Manuscript in submission","statusZh":"投稿中論文","image":"assets/research/bess-parallel-flow-concept.png"}
 ]
