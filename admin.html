@@ -1,38 +1,59 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Content Editor | Yen-Wen Lu</title>
+<title>Content Studio V5 | Yen-Wen Lu</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="header"></div>
-<main class="admin-shell">
-  <aside class="admin-sidebar">
-    <button data-file="projects.json" class="active">Projects</button>
-    <button data-file="people.json">People</button>
-    <button data-file="publications.json">Publications</button>
-    <button data-file="news.json">News</button>
-    <button data-file="gallery.json">Gallery</button>
-    <button data-file="site.json">Site settings</button>
+<main class="cms-shell">
+  <aside class="cms-sidebar">
+    <div class="cms-brand"><small>YEN-WEN LU</small><strong>Content Studio V5</strong></div>
+    <button data-section="projects" class="active">Projects</button>
+    <button data-section="people">People</button>
+    <button data-section="publications">Publications</button>
+    <button data-section="news">News</button>
+    <button data-section="gallery">Gallery</button>
+    <button data-section="site">Site settings</button>
+    <a href="index.html" class="cms-back">← Back to website</a>
   </aside>
-  <section class="admin-main">
-    <p class="kicker">LOCAL CONTENT EDITOR</p>
-    <h2 id="editorTitle">Projects</h2>
-    <div class="status" id="status">Edit carefully. This editor downloads updated JSON files; it does not directly write to GitHub.</div>
-    <div class="editor-toolbar">
-      <button class="btn dark" id="validateBtn">Validate JSON</button>
-      <button class="btn primary" id="downloadBtn">Download updated file</button>
-      <button class="btn dark" id="formatBtn">Format JSON</button>
+
+  <section class="cms-main">
+    <header class="cms-topbar">
+      <div>
+        <p class="kicker">LOCAL CONTENT MANAGEMENT</p>
+        <h1 id="cmsTitle">Projects</h1>
+        <p id="cmsSubtitle"></p>
+      </div>
+      <div class="cms-actions">
+        <button class="btn dark" id="addBtn">+ Add item</button>
+        <button class="btn primary" id="downloadBtn">Download JSON</button>
+      </div>
+    </header>
+
+    <div class="cms-notice" id="notice">
+      Edit through the form, download the JSON file, then replace the matching file in GitHub's data folder.
     </div>
-    <textarea class="editor-area" id="editor" spellcheck="false"></textarea>
+
+    <div class="cms-layout">
+      <section class="cms-list-panel">
+        <div class="cms-list-tools"><input id="search" placeholder="Search"></div>
+        <div id="items" class="cms-list"></div>
+      </section>
+
+      <section class="cms-editor-panel">
+        <div id="empty" class="cms-empty">Select an item to edit.</div>
+        <form id="form" class="cms-form hidden"></form>
+      </section>
+    </div>
   </section>
 </main>
 <div id="footer"></div>
 <script>window.BASE="";</script>
 <script src="app.js"></script>
-<script src="admin.js"></script>
+<script src="admin-v5.js"></script>
 </body>
 </html>

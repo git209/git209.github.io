@@ -1,44 +1,34 @@
-# Yen-Wen Lu Academic Website V4
+# Yen-Wen Lu Academic Website V5
 
-V4 builds on the data-driven V3 site and adds:
+V5 adds a form-based content studio.
 
-- Dedicated project pages
-- Filterable publications
-- Individual people profiles
-- Categorized news
-- Local Wix image assets
-- A creative laboratory-spirit banner
-- A browser-based content editor (`admin.html`)
-- Responsive desktop, tablet, and mobile layouts
+## Open the editor
 
-## Important limitation of the editor
+After deployment:
 
-GitHub Pages is static hosting. The content editor cannot directly save to GitHub.
+`https://git209.github.io/admin.html`
 
-Workflow:
+## What the editor can do
 
-1. Open `admin.html` from the deployed website.
-2. Select Projects, People, Publications, News, Gallery, or Site settings.
-3. Edit and validate the JSON.
-4. Download the updated JSON file.
-5. Replace the matching file in the repository's `data/` folder.
-6. Commit the change.
+- Edit Projects, People, Publications, News, Gallery, and Site settings
+- Add, delete, duplicate, search, and drag-to-reorder records
+- Preview selected images and generate suggested asset paths
+- Download updated JSON files
 
-## Main data files
+## Publishing workflow
 
-- `data/site.json`
-- `data/projects.json`
-- `data/people.json`
-- `data/publications.json`
-- `data/news.json`
-- `data/gallery.json`
+GitHub Pages is static hosting, so the editor does not directly save to GitHub.
 
-## Before formal launch
+1. Open `admin.html`.
+2. Edit the content using the forms.
+3. Click **Download JSON**.
+4. Replace the matching file in the repository's `data/` folder.
+5. Upload any newly selected images to the suggested `assets/` folder.
+6. Commit the changes.
+7. Wait for GitHub Pages deployment.
 
-- Replace placeholder email and academic links.
-- Verify all publication titles, author lists, journals, years, and DOI links.
-- Replace generic people groups with individual current members.
-- Review every project image and caption.
-- Confirm any displayed numerical claims before publication.
+## Important checks
 
-Upload the contents of this folder directly to the root of `git209.github.io`.
+- Replace placeholder contact information and profile links.
+- Verify publication titles, authors, journals, years, and DOI URLs.
+- Confirm that every image matches its project, person, news item, or gallery caption.

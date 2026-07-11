@@ -22,3 +22,46 @@
 .status{padding:10px 14px;border-radius:9px;background:#fff8e9;border-left:4px solid var(--gold);margin-bottom:16px}
 @media(max-width:900px){.spirit-layout{grid-template-columns:1fr}.admin-layout{flex-direction:column;align-items:flex-start}.admin-shell{grid-template-columns:1fr}.admin-sidebar{display:flex;overflow:auto;gap:6px}.admin-sidebar button{min-width:max-content}.section-heading-v4{align-items:flex-start;flex-direction:column}}
 @media(max-width:620px){.value-grid{grid-template-columns:1fr}}
+
+.cms-shell{display:grid;grid-template-columns:250px 1fr;min-height:calc(100vh - 74px);background:var(--soft)}
+.cms-sidebar{background:#071f36;color:#fff;padding:24px 16px;display:flex;flex-direction:column;gap:6px}
+.cms-brand{padding:8px 10px 22px;border-bottom:1px solid rgba(255,255,255,.13);margin-bottom:10px}
+.cms-brand small{display:block;color:#cfaa59;letter-spacing:.14em;font-size:.68rem}
+.cms-brand strong{display:block;margin-top:5px}
+.cms-sidebar button,.cms-back{border:0;border-radius:9px;padding:11px 12px;background:transparent;color:#fff;text-align:left;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.cms-sidebar button:hover,.cms-sidebar button.active{background:rgba(255,255,255,.13)}
+.cms-back{margin-top:auto;color:rgba(255,255,255,.7)}
+.cms-main{padding:30px;min-width:0}
+.cms-topbar{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:18px}
+.cms-topbar h1{font-family:Merriweather,"Noto Sans TC",serif;color:var(--navy);font-size:2.2rem;margin:0}
+.cms-topbar p{color:var(--muted);margin-bottom:0}
+.cms-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cms-notice{padding:12px 15px;border-left:4px solid var(--gold);background:#fff8e9;border-radius:8px;margin-bottom:18px;color:#6c582a}
+.cms-layout{display:grid;grid-template-columns:330px minmax(0,1fr);gap:18px}
+.cms-list-panel,.cms-editor-panel{background:#fff;border:1px solid var(--line);border-radius:16px;min-height:650px}
+.cms-list-tools{padding:14px;border-bottom:1px solid var(--line)}
+.cms-list-tools input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px}
+.cms-list{padding:8px}
+.cms-list-item{display:grid;grid-template-columns:22px 1fr 28px;gap:8px;align-items:center;width:100%;border:0;background:transparent;border-radius:9px;padding:11px 9px;text-align:left;cursor:pointer;color:var(--text)}
+.cms-list-item:hover,.cms-list-item.active{background:#eaf3f8}
+.cms-list-item small{color:var(--muted);text-align:right}
+.drag-handle{color:#96a4ae;cursor:grab}
+.cms-editor-panel{padding:22px}
+.cms-empty{height:100%;min-height:500px;display:grid;place-items:center;color:var(--muted)}
+.cms-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.cms-form.hidden,.cms-empty.hidden{display:none}
+.cms-field{display:flex;flex-direction:column;gap:7px}
+.cms-field.wide{grid-column:1/-1}
+.cms-field label{font-size:.82rem;font-weight:800;color:#40505e}
+.cms-field input[type=text],.cms-field input[type=email],.cms-field input[type=url],.cms-field input[type=number],.cms-field textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit}
+.cms-field textarea{min-height:118px;resize:vertical}
+.image-field{display:grid;grid-template-columns:170px 1fr;gap:15px}
+.image-field img{width:170px;height:115px;object-fit:cover;border-radius:10px;background:#e8eef2}
+.image-field div{display:flex;flex-direction:column;gap:9px}
+.image-field small{color:var(--muted)}
+.cms-form-actions{grid-column:1/-1;display:flex;gap:10px;padding-top:18px;border-top:1px solid var(--line)}
+.danger-btn,.secondary-btn{padding:10px 14px;border-radius:8px;font-weight:750;cursor:pointer}
+.danger-btn{background:#fff0f0;color:#a82929;border:1px solid #efb9b9}
+.secondary-btn{background:#fff;border:1px solid var(--line)}
+@media(max-width:900px){.cms-shell{grid-template-columns:1fr}.cms-sidebar{flex-direction:row;overflow:auto}.cms-brand,.cms-back{display:none}.cms-sidebar button{min-width:max-content}.cms-main{padding:20px}.cms-layout{grid-template-columns:1fr}.cms-list-panel{min-height:auto}}
+@media(max-width:620px){.cms-topbar{flex-direction:column}.cms-form{grid-template-columns:1fr}.image-field{grid-template-columns:1fr}.image-field img{width:100%;height:180px}}
