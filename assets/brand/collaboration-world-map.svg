@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+  <title id="title">International collaboration map</title><desc id="desc">World map marking Taiwan and international collaboration and exchange sources.</desc>
+  <rect width="1200" height="580" fill="#06233e"/>
+  <g fill="#1c5579" stroke="#4d86a8" stroke-width="2" opacity=".95">
+    <path d="M78 133l77-53 91 11 31 46-27 35 19 48-35 48-63-7-22-45-48-24z"/><path d="M263 285l43 21 20 69-24 96-37 23-22-80z"/>
+    <path d="M446 109l70-33 108 18 68 31 22 51-44 36-30 54-76-7-41-45-63-18-31-46z"/><path d="M619 288l73 21 54 69-25 118-57 40-39-67 16-72-50-55z"/>
+    <path d="M694 89l111-29 126 38 93-4 79 60-45 62-87 3-62-38-84 12-65-40-67-16z"/><path d="M914 264l61 19 39 55-34 37-66-18-34-48z"/>
+    <path d="M1049 397l75-12 48 33-19 53-86 6-38-40z"/>
+  </g>
+  <g fill="none" stroke="#7bb9d5" stroke-width="2" stroke-dasharray="6 7" opacity=".75"><path d="M869 235C730 145 693 197 645 203"/><path d="M869 235C788 321 685 345 634 343"/><path d="M869 235C800 263 776 279 747 290"/><path d="M869 235C746 115 600 148 506 156"/><path d="M869 235C545 107 204 133 189 168"/><path d="M869 235C430 188 236 175 163 193"/><path d="M869 235C816 193 790 166 760 145"/><path d="M869 235C872 188 881 156 895 129"/></g>
+  <g font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">
+    <g transform="translate(869 235)"><circle r="9" fill="#f5c75f" stroke="#fff" stroke-width="3"/><text x="14" y="-12">Taiwan · NTU</text></g>
+    <g transform="translate(747 290)"><circle r="7" fill="#59d3bc"/><text x="12" y="26">Thailand · KKU</text></g>
+    <g transform="translate(634 343)"><circle r="7" fill="#59d3bc"/><text x="12" y="26">Malaysia · UM</text></g>
+    <g transform="translate(776 279)"><circle r="7" fill="#59d3bc"/><text x="12" y="26">Vietnam · HCMUT</text></g>
+    <g transform="translate(760 145)"><circle r="7" fill="#9fd3ef"/><text x="12" y="-10">Japan</text></g>
+    <g transform="translate(798 259)"><circle r="7" fill="#9fd3ef"/><text x="12" y="-10">Philippines</text></g>
+    <g transform="translate(645 203)"><circle r="7" fill="#59d3bc"/><text x="12" y="-10">India · IIPP / TEEP</text></g>
+    <g transform="translate(189 168)"><circle r="7" fill="#59d3bc"/><text x="12" y="-10">United States</text></g>
+    <g transform="translate(163 193)"><circle r="7" fill="#59d3bc"/><text x="12" y="26">Canada · U of T</text></g>
+  </g>
+  <text x="58" y="540" font-family="Inter,Arial,sans-serif" font-size="16" fill="#a9c7d8">● Hosted students / named institutional links</text><text x="430" y="540" font-family="Inter,Arial,sans-serif" font-size="16" fill="#a9c7d8">● Academic exchange network</text>
+</svg>
