@@ -1,11 +1,11 @@
-# Yen-Wen Lu V5 Ultimate
+# Yen-Wen Lu Lab V6
 
-Complete bilingual academic-brand website.
+V6 is a content-driven academic-brand website with a focused home page, project stories, selected publications, and international learning stories.
 
 Brand: **Intelligent Microsystems with Real-World Impact**
 
-Upload the contents directly to the root of `git209/website-phase1` for testing.
+Upload the contents directly to the GitHub Pages repository root.
 
 Contact: yenwenlu@ntu.edu.tw
 
-The website presents four connected research platforms: microfluidic and bioanalytical systems; wearable, flexible and self-powered biosensing; AI-enabled precision health; and adaptive bioinspired and sustainable systems.
+Update `data/v6/` and `data/publications.json` as new systems, evidence, publications, and international stories emerge. See `content/README.md` for the maintenance workflow.
