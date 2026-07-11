@@ -1,245 +1,93 @@
 [
   {
-    "id": "digital-microfluidics",
-    "title": "Digital Microfluidics & EWOD",
-    "titleZh": "數位微流體與電濕潤",
-    "tagline": "Programmable droplets for automated biology and chemistry",
-    "taglineZh": "以可程式化液滴推動自動化生物與化學分析",
-    "image": "assets/research/lab-on-a-chip-concept.jpg",
-    "why": "Traditional microfluidic systems depend on pumps, tubing, and fixed channels. Digital microfluidics replaces this infrastructure with addressable electrodes that manipulate discrete droplets directly.",
-    "whyZh": "傳統微流體依賴幫浦、管線與固定流道；數位微流體則利用可獨立控制的電極直接操控離散液滴。",
-    "challenge": "Reliable parallel droplet generation, volume uniformity, hydrogel and magnetic-bead handling, dielectric durability, and robust actuation remain central engineering challenges.",
-    "challengeZh": "平行液滴生成、體積均一性、水膠與磁珠操作、介電層耐久性及穩定驅動，是主要工程挑戰。",
-    "innovation": "We study electrode geometry, electrowetting physics, droplet splitting, parallel operation, and energy-autonomous actuation to create scalable biomedical platforms.",
-    "innovationZh": "研究電極幾何、電濕潤物理、液滴分裂、平行操作與能源自主驅動，建立可擴充的生醫平台。",
-    "evidence": [
-      "Programmable droplet transport, mixing, splitting, and dispensing",
-      "Parallel droplet generation and volume-control strategies",
-      "Magnetic-bead and hydrogel handling",
-      "Disk-TENG-powered digital microfluidic operation"
-    ],
-    "evidenceZh": [
-      "可程式化液滴輸送、混合、分裂與分注",
-      "平行液滴生成與體積控制策略",
-      "磁珠與水膠操作",
-      "以 Disk-TENG 驅動數位微流體"
-    ],
-    "applications": [
-      "Automated bioassays",
-      "Point-of-care testing",
-      "Digital biology",
-      "Sample preparation"
-    ],
-    "applicationsZh": [
-      "自動化生物檢測",
-      "現場檢測",
-      "數位生物學",
-      "樣品前處理"
-    ],
-    "future": "AI-assisted experiment planning, autonomous laboratories, scalable parallel operation, and clinically relevant sample-to-answer systems.",
-    "futureZh": "結合 AI 實驗規劃、自主實驗室、可擴充平行操作，以及具臨床價值的 sample-to-answer 系統。",
-    "media": [{"url":"https://www.youtube.com/watch?v=1okl0gkwwUw","title":"LEGO AFM: Micro- and nanotechnology education","titleZh":"LEGO AFM：微奈米科技教育示範"}]
+    "id":"digital-microfluidics",
+    "title":"Microfluidic & Bioanalytical Systems",
+    "titleZh":"微流體與生物分析系統",
+    "tagline":"From lab-on-a-chip physics to sample-to-answer platforms",
+    "taglineZh":"從實驗室晶片物理到完整的樣品分析平台",
+    "image":"assets/research/lab-on-a-chip-concept.jpg",
+    "why":"We turn complex biological handling into compact, programmable systems that can prepare, separate, and analyse samples with less infrastructure.",
+    "whyZh":"我們將複雜的生物樣品操作轉化為小型、可程式化系統，降低樣品前處理、分離與分析所需的基礎設施。",
+    "challenge":"Reliable droplet handling, parallel operation, sample variation, and filtration fouling must be solved together before a chip becomes a usable system.",
+    "challengeZh":"液滴的穩定操作、平行化、樣品差異與過濾污染，都必須一併解決，晶片才能成為真正可用的系統。",
+    "innovation":"Digital microfluidics, lab-on-a-chip design, and acoustofluidic filtration are developed as complementary tools for automated diagnostics and biological workflows.",
+    "innovationZh":"數位微流體、實驗室晶片與聲流體過濾彼此互補，共同建立自動化診斷與生物分析流程。",
+    "evidence":["Programmable droplet transport, mixing, splitting, and dispensing","Parallel droplet generation and volume-control strategies","Bubble-streaming filtration removes fouling in about 0.5 s","Forensic sperm recovery around 91.7–97.8%"],
+    "evidenceZh":["可程式化液滴輸送、混合、分裂與分注","平行液滴生成與體積控制策略","氣泡聲流過濾約 0.5 秒移除污染層","法醫精子回收率約 91.7–97.8%"],
+    "applications":["Point-of-care diagnostics","Sample preparation","Cell enrichment","Digital biology"],
+    "applicationsZh":["現場檢測","樣品前處理","細胞富集","數位生物學"],
+    "future":"Integrated sample-to-answer diagnostics, automated biology, and scalable parallel operation.",
+    "futureZh":"整合式 sample-to-answer 診斷、自動化生物分析與可擴充的平行操作。",
+    "connects":"Provides the device and sample-handling foundation for wearable biosensing and AI-enabled precision health.",
+    "connectsZh":"提供穿戴式生醫感測與 AI 精準健康所需的元件與樣品處理基礎。",
+    "media":[{"url":"https://www.youtube.com/watch?v=1okl0gkwwUw","videoId":"1okl0gkwwUw","title":"LEGO AFM: Micro- and nanotechnology education","titleZh":"LEGO AFM：微奈米科技教育示範","description":"A hands-on bridge from micro/nano concepts to device thinking.","descriptionZh":"從微奈米概念延伸到元件思維的實作示範。"}]
   },
   {
-    "id": "ai-hemodialysis",
-    "title": "AI-Assisted Hemodialysis Monitoring",
-    "titleZh": "AI 智慧血液透析監測",
-    "tagline": "Real-time optical monitoring for personalized dialysis",
-    "taglineZh": "以即時光學監測推動個人化透析",
-    "image": "assets/research/innovation-awards-2025.jpg",
-    "why": "Conventional dialysis assessment relies on intermittent blood sampling and summary metrics that do not continuously reflect toxin removal or emerging risk.",
-    "whyZh": "傳統透析評估依賴間歇抽血與總結性指標，無法持續反映尿毒素清除與治療風險。",
-    "challenge": "Overlapping optical signatures, patient variability, machine artifacts, and different biomarker dynamics complicate real-time prediction.",
-    "challengeZh": "光學訊號重疊、個體差異、設備干擾與不同指標動態，使即時預測更具挑戰。",
-    "innovation": "The platform combines 255, 275, and 310 nm optical sensing with personalized variables and support vector regression.",
-    "innovationZh": "平台結合 255、275 與 310 nm 光學感測、個人化參數及支援向量迴歸。",
-    "evidence": [
-      "Thirty sessions from nine ESRD patients",
-      "One-minute monitoring over about four hours",
-      "Prediction of six clinically relevant biomarkers",
-      "R² around 0.95 for several toxin predictions"
-    ],
-    "evidenceZh": [
-      "九位 ESRD 病人、三十次療程",
-      "約四小時療程中每分鐘監測",
-      "預測六項臨床重要指標",
-      "多項尿毒素預測 R² 約達 0.95"
-    ],
-    "applications": [
-      "Smart dialysis",
-      "Clinical decision support",
-      "Treatment personalization",
-      "Safety monitoring"
-    ],
-    "applicationsZh": [
-      "智慧透析",
-      "臨床決策支援",
-      "治療個人化",
-      "安全監測"
-    ],
-    "future": "Multicenter validation, intradialytic hypotension prediction, explainable AI, and hospital-system integration.",
-    "futureZh": "多中心驗證、透析中低血壓預測、可解釋 AI 與醫院系統整合。",
-    "media": [{"url":"https://www.youtube.com/watch?v=dovDcAzYAUA","title":"Precision medicine and real-time clinical monitoring","titleZh":"精準醫療與即時臨床監測"}]
+    "id":"wearable-sensors",
+    "title":"Wearable, Flexible & Self-Powered Biosensing",
+    "titleZh":"穿戴式、柔性與自供電生醫感測",
+    "tagline":"Human-centred sensing for continuous physiological insight",
+    "taglineZh":"以人為本的連續生理感測",
+    "image":"assets/research/tactile-sensor.png",
+    "why":"Wearable devices must be comfortable, sensitive, low-cost, and dependable enough to capture meaningful signals in daily life.",
+    "whyZh":"穿戴式裝置必須兼具舒適、高靈敏、低成本與可靠性，才能在日常生活中捕捉有意義的生理訊號。",
+    "challenge":"Sensitivity, range, miniaturization, repeatability, power use, and clinical relevance often pull in different directions.",
+    "challengeZh":"靈敏度、量測範圍、微型化、重複性、耗電與臨床價值常彼此拉扯。",
+    "innovation":"Origami and paper architectures, nanomaterials, low-power electronics, and energy-autonomous strategies create practical multimodal sensing platforms.",
+    "innovationZh":"摺紙與紙基結構、奈米材料、低功耗電子與能源自主策略，共同形成實用的多模態感測平台。",
+    "evidence":["Sensitivity up to about 3.75 kPa⁻¹","Range up to about 20 kPa","10,000-cycle evaluation","Pulse, posture, bruxism, and trigger-finger demonstrations"],
+    "evidenceZh":["靈敏度最高約 3.75 kPa⁻¹","量測範圍最高約 20 kPa","10,000 次循環測試","脈搏、姿態、磨牙與扳機指展示"],
+    "applications":["Digital health","Rehabilitation","Physiological monitoring","Animal health"],
+    "applicationsZh":["數位健康","復健","生理監測","動物健康"],
+    "future":"Multimodal e-skin, washable and self-powered integration, and deployment from wellness to clinical monitoring.",
+    "futureZh":"多模態電子皮膚、可清洗與自供電整合，以及從健康管理到臨床監測的應用。",
+    "connects":"Generates continuous, real-world signals that become actionable through AI models and clinical validation.",
+    "connectsZh":"產生連續的真實世界訊號，再透過 AI 模型與臨床驗證轉化為可行動的資訊。"
   },
   {
-    "id": "acoustofluidics",
-    "title": "Acoustofluidic Filtration",
-    "titleZh": "聲流體微尺度過濾",
-    "tagline": "Bubble streaming for rapid separation and fouling control",
-    "taglineZh": "以氣泡聲流實現快速分離與抗污染",
-    "image": "assets/research/acoustic-labchip-cover-2023.jpg",
-    "why": "Microscale filtration is compact and selective, but filters rapidly foul when cells and particles accumulate near pores.",
-    "whyZh": "微尺度過濾具小型化與選擇性，但細胞與顆粒在孔口累積時容易迅速阻塞。",
-    "challenge": "Maintaining throughput while preserving recovery, purity, and sample integrity is difficult for highly imbalanced mixtures.",
-    "challengeZh": "面對比例高度不均的樣品，要同時維持通量、回收率、純度與樣品完整性十分困難。",
-    "innovation": "The device combines cross-flow filtration with acoustic streaming generated by oscillating trapped bubbles.",
-    "innovationZh": "裝置整合錯流過濾與受困氣泡振盪所產生的聲流。",
-    "evidence": [
-      "Fouling removal in about 0.5 s",
-      "Sperm recovery around 91.7–97.8%",
-      "Purity around 74.6–89.3%",
-      "Successful downstream STR profiling"
-    ],
-    "evidenceZh": [
-      "約 0.5 秒移除污染層",
-      "精子回收率約 91.7–97.8%",
-      "純度約 74.6–89.3%",
-      "後續 STR 分析成功"
-    ],
-    "applications": [
-      "Forensic sample preparation",
-      "Cell enrichment",
-      "Microfiltration",
-      "Fouling-resistant lab-on-chip"
-    ],
-    "applicationsZh": [
-      "法醫樣品前處理",
-      "細胞富集",
-      "微尺度過濾",
-      "抗污染生物晶片"
-    ],
-    "future": "Improved bubble stability, higher throughput, real forensic samples, and integrated molecular analysis.",
-    "futureZh": "提升氣泡穩定性、增加通量、使用真實法醫樣品並整合分子分析。"
+    "id":"ai-hemodialysis",
+    "title":"AI-Enabled Precision Health",
+    "titleZh":"AI 精準健康系統",
+    "tagline":"Integrating sensing, patient context, and data-driven decisions",
+    "taglineZh":"整合感測、個人化資訊與資料驅動決策",
+    "image":"assets/research/innovation-awards-2025.jpg",
+    "why":"Intermittent measurements cannot fully reflect treatment response or emerging risk; useful precision health needs continuous data in context.",
+    "whyZh":"間歇量測無法完整反映治療反應與即將出現的風險；有價值的精準健康需要脈絡化的連續資料。",
+    "challenge":"Optical overlap, patient variation, machine artifacts, and different biomarker dynamics complicate trustworthy real-time prediction.",
+    "challengeZh":"光學訊號重疊、個體差異、設備干擾與不同生物標記動態，使可信的即時預測更具挑戰。",
+    "innovation":"The hemodialysis platform combines multi-wavelength optical sensing, patient-specific variables, and machine learning—an approach extendable to multimodal biosignals.",
+    "innovationZh":"血液透析平台結合多波長光學感測、個人化變項與機器學習，並可延伸至多模態生理訊號。",
+    "evidence":["Thirty sessions from nine ESRD patients","One-minute monitoring over about four hours","Prediction of six clinically relevant biomarkers","R² around 0.95 for several toxin predictions"],
+    "evidenceZh":["九位 ESRD 病人、三十次療程","約四小時療程中每分鐘監測","預測六項臨床重要指標","多項尿毒素預測 R² 約達 0.95"],
+    "applications":["Smart dialysis","Clinical decision support","Precision medicine","Digital biomarkers"],
+    "applicationsZh":["智慧透析","臨床決策支援","精準醫療","數位生物標記"],
+    "future":"Multicentre validation, intradialytic hypotension prediction, explainable AI, and integration with wearable and agricultural sensing.",
+    "futureZh":"多中心驗證、透析中低血壓預測、可解釋 AI，以及與穿戴式和農業感測系統整合。",
+    "connects":"Closes the loop: it converts data from microfluidic and wearable platforms into personalised health decisions.",
+    "connectsZh":"完成閉環：將微流體與穿戴式平台的資料轉化為個人化健康決策。",
+    "media":[{"url":"https://www.youtube.com/watch?v=dovDcAzYAUA","videoId":"dovDcAzYAUA","title":"Precision medicine and real-time clinical monitoring","titleZh":"精準醫療與即時臨床監測","description":"Why real-time sensing and patient-specific data matter for better care.","descriptionZh":"說明即時感測與個人化資料如何支持更好的照護。"}]
   },
   {
-    "id": "wearable-sensors",
-    "title": "Wearable & Paper-Based Sensors",
-    "titleZh": "穿戴式與紙基感測",
-    "tagline": "Low-cost, high-sensitivity sensing for digital health",
-    "taglineZh": "面向數位健康的低成本高靈敏感測",
-    "image": "assets/research/tactile-sensor.png",
-    "why": "Wearable sensors must conform to the body, detect subtle signals, remain comfortable, and be manufacturable at practical cost.",
-    "whyZh": "穿戴式感測器需貼合人體、偵測細微訊號、維持舒適性，並具備可實際製造的成本。",
-    "challenge": "Sensitivity, range, miniaturization, repeatability, and integration often conflict.",
-    "challengeZh": "靈敏度、量測範圍、微型化、重複性與整合之間常存在取捨。",
-    "innovation": "Origami structures, paper substrates, conductive nanomaterials, and engineered crease patterns amplify electrical response.",
-    "innovationZh": "利用摺紙結構、紙基材料、導電奈米材料與設計化摺痕放大電訊號。",
-    "evidence": [
-      "Sensitivity up to about 3.75 kPa⁻¹",
-      "Range up to about 20 kPa",
-      "10,000-cycle evaluation",
-      "Pulse, posture, bruxism, and trigger-finger demonstrations"
-    ],
-    "evidenceZh": [
-      "靈敏度最高約 3.75 kPa⁻¹",
-      "量測範圍最高約 20 kPa",
-      "10,000 次循環測試",
-      "脈搏、姿態、磨牙與扳機指展示"
-    ],
-    "applications": [
-      "Rehabilitation",
-      "Posture monitoring",
-      "Pulse sensing",
-      "Human–machine interfaces"
-    ],
-    "applicationsZh": [
-      "復健",
-      "姿態監測",
-      "脈搏感測",
-      "人機介面"
-    ],
-    "future": "Smaller devices, multimodal sensing, washable integration, and clinical deployment.",
-    "futureZh": "更小型化、多模態感測、可清洗整合與臨床應用。"
-  },
-  {
-    "id": "soft-robotics",
-    "title": "Soft Robotics & Programmable Materials",
-    "titleZh": "軟性機器人與可程式化材料",
-    "tagline": "Magnetically programmed motion for safe and adaptive systems",
-    "taglineZh": "以磁性程式化運動打造安全且具適應性的系統",
-    "image": "assets/research/microhand.png",
-    "why": "Rigid robots excel at precision but are less suited to delicate, uncertain, or human-centered environments.",
-    "whyZh": "剛性機器人在精準操作上表現優異，但較不適合脆弱、未知或以人為中心的環境。",
-    "challenge": "Soft robots need controllable deformation, sufficient force, repeatable motion, and simple fabrication without losing compliance.",
-    "challengeZh": "軟性機器人需在保有柔順性的同時，實現可控制變形、足夠力量與可重複運動。",
-    "innovation": "Magnetic anisotropy is programmed during curing to enable sectional actuation and biomimetic motion.",
-    "innovationZh": "在固化過程中設計磁性異向性，使系統可進行分區驅動與仿生運動。",
-    "evidence": [
-      "Fe₃O₄–PDMS composites",
-      "About 70° flower-petal rotation",
-      "Four-finger robot in air and water",
-      "Phalange forces around 1.12 and 0.9 mN"
-    ],
-    "evidenceZh": [
-      "Fe₃O₄–PDMS 複合材料",
-      "花瓣旋轉約 70°",
-      "四指機器人可於空氣與水中操作",
-      "指骨力量約 1.12 與 0.9 mN"
-    ],
-    "applications": [
-      "Soft grasping",
-      "Biomedical manipulation",
-      "Education",
-      "Human-safe robotics"
-    ],
-    "applicationsZh": [
-      "柔性抓取",
-      "生醫操控",
-      "教育",
-      "人機安全機器人"
-    ],
-    "future": "Higher force density, integrated sensing, closed-loop control, and assistive applications.",
-    "futureZh": "提高力密度、整合感測與閉迴路控制，並發展輔助應用。",
-    "media": [{"url":"https://www.youtube.com/watch?v=sz4vtl_IhCs","title":"Soft robotic manipulation and the microhand","titleZh":"軟性機器人操控與微型仿生手"},{"url":"https://www.youtube.com/watch?v=kfqGwRd0al8","title":"Biomimetic soft robotics","titleZh":"仿生軟性機器人"}]
-  },
-  {
-    "id": "thermal-energy",
-    "title": "Thermal Management & Energy Systems",
-    "titleZh": "熱管理與能源系統",
-    "tagline": "Thermal-fluid intelligence for batteries and high-power devices",
-    "taglineZh": "面向電池與高功率裝置的智慧熱流工程",
-    "image": "assets/research/ntu-biomedical-cleanroom.jpg",
-    "why": "Battery storage and high-power electronics are limited by temperature nonuniformity, hot spots, and airflow inefficiency.",
-    "whyZh": "儲能電池與高功率電子系統受限於溫度不均、局部熱點與氣流效率不足。",
-    "challenge": "Large container systems contain complex flow paths, anisotropic cells, recirculation, and layout-dependent cooling.",
-    "challengeZh": "大型貨櫃系統具有複雜流道、異向性電芯、迴流與高度依賴配置的冷卻效能。",
-    "innovation": "CFD, anisotropic thermal modeling, and parallel-flow cooling design improve system-level temperature control.",
-    "innovationZh": "結合 CFD、異向性熱模型與平行流冷卻設計，改善系統層級溫度控制。",
-    "evidence": [
-      "20-ft BESS model with ten cabinets",
-      "Peak temperature reduced from about 42.3 to 37.5 °C",
-      "Temperature spread reduced from about 14.3 to 10.2 °C",
-      "Performance index improved about 75.9%"
-    ],
-    "evidenceZh": [
-      "20 呎 BESS、十個機櫃模型",
-      "最高溫約由 42.3 降至 37.5 °C",
-      "溫差約由 14.3 降至 10.2 °C",
-      "效能指標約提升 75.9%"
-    ],
-    "applications": [
-      "Battery energy storage",
-      "Electronics cooling",
-      "High-power systems",
-      "Mission-critical thermal design"
-    ],
-    "applicationsZh": [
-      "電池儲能",
-      "電子散熱",
-      "高功率系統",
-      "高可靠度熱設計"
-    ],
-    "future": "Hybrid cooling with cold plates and phase-change materials, AI control, and experimental validation.",
-    "futureZh": "整合冷板與相變材料的混合冷卻、AI 熱管理與實驗驗證。"
+    "id":"soft-robotics",
+    "title":"Adaptive Bioinspired & Sustainable Systems",
+    "titleZh":"適應性仿生與永續系統",
+    "tagline":"Soft materials, intelligent actuation, and thermal-fluid engineering",
+    "taglineZh":"軟性材料、智慧驅動與熱流工程",
+    "image":"assets/research/microhand.png",
+    "why":"Emerging healthcare, agricultural, and energy systems need to be safe around people and biology while using materials and energy more intelligently.",
+    "whyZh":"新一代健康、農業與能源系統必須安全地面對人與生物，同時更智慧地使用材料與能源。",
+    "challenge":"Controlled soft motion, sensing integration, robust operation, and thermal reliability must be achieved without sacrificing simplicity or sustainability.",
+    "challengeZh":"可控軟性運動、感測整合、穩定操作與熱可靠度，必須在不犧牲簡潔與永續性的前提下達成。",
+    "innovation":"Programmed magnetic materials enable biomimetic actuation, while thermal-fluid modelling improves the safety and efficiency of high-power systems.",
+    "innovationZh":"可程式化磁性材料實現仿生驅動；熱流模型則提升高功率系統的安全性與效率。",
+    "evidence":["About 70° flower-petal rotation","Four-finger robot in air and water","20-ft BESS parallel-flow cooling study","Peak temperature reduced from about 42.3 to 37.5 °C"],
+    "evidenceZh":["花瓣旋轉約 70°","四指機器人可於空氣與水中操作","20 呎 BESS 平行流冷卻研究","最高溫約由 42.3 降至 37.5 °C"],
+    "applications":["Biomedical manipulation","Precision agriculture","Human-safe robotics","Energy-system reliability"],
+    "applicationsZh":["生醫操控","精準農業","人機安全機器人","能源系統可靠度"],
+    "future":"Integrated sensing, closed-loop control, assistive robots, smart agriculture, and sustainable high-power system design.",
+    "futureZh":"整合感測、閉迴路控制、輔助型機器人、智慧農業與永續高功率系統設計。",
+    "connects":"Extends sensing and AI into physical action, resilient energy use, and field-ready agricultural systems.",
+    "connectsZh":"將感測與 AI 延伸至實體行動、韌性能耗管理與可落地的農業系統。",
+    "media":[{"url":"https://www.youtube.com/watch?v=sz4vtl_IhCs","videoId":"sz4vtl_IhCs","title":"Soft robotic manipulation and the microhand","titleZh":"軟性機器人操控與微型仿生手","description":"A micro-scale example of safe, biomimetic manipulation.","descriptionZh":"展現安全、仿生的微尺度操控。"},{"url":"https://www.youtube.com/watch?v=kfqGwRd0al8","videoId":"kfqGwRd0al8","title":"Biomimetic soft robotics","titleZh":"仿生軟性機器人","description":"Motion inspired by biology, designed for adaptive systems.","descriptionZh":"由生物啟發的運動，面向具適應性的系統設計。"}]
   }
 ]
