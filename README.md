@@ -1,22 +1,44 @@
-# Yen-Wen Lu Academic Website V3
+# Yen-Wen Lu Academic Website V4
 
-Features:
-1. Dedicated project pages
-2. Filterable publications database
-3. Individual people profile pages
-4. Categorized and filterable news
-5. Centralized JSON data for maintenance
+V4 builds on the data-driven V3 site and adds:
 
-Edit:
-- data/projects.json
-- data/people.json
-- data/publications.json
-- data/news.json
+- Dedicated project pages
+- Filterable publications
+- Individual people profiles
+- Categorized news
+- Local Wix image assets
+- A creative laboratory-spirit banner
+- A browser-based content editor (`admin.html`)
+- Responsive desktop, tablet, and mobile layouts
 
-The publication records are placeholders and must be replaced with verified metadata before formal launch.
+## Important limitation of the editor
 
-Upload the contents of this folder directly to the root of git209.github.io.
+GitHub Pages is static hosting. The content editor cannot directly save to GitHub.
 
+Workflow:
 
-## Local image integration
-All selected photographs from WebsiteIMG.zip have been converted to optimized WebP files and stored under assets/research, assets/people, assets/news, and assets/gallery. The site no longer depends on Wix image URLs.
+1. Open `admin.html` from the deployed website.
+2. Select Projects, People, Publications, News, Gallery, or Site settings.
+3. Edit and validate the JSON.
+4. Download the updated JSON file.
+5. Replace the matching file in the repository's `data/` folder.
+6. Commit the change.
+
+## Main data files
+
+- `data/site.json`
+- `data/projects.json`
+- `data/people.json`
+- `data/publications.json`
+- `data/news.json`
+- `data/gallery.json`
+
+## Before formal launch
+
+- Replace placeholder email and academic links.
+- Verify all publication titles, author lists, journals, years, and DOI links.
+- Replace generic people groups with individual current members.
+- Review every project image and caption.
+- Confirm any displayed numerical claims before publication.
+
+Upload the contents of this folder directly to the root of `git209.github.io`.

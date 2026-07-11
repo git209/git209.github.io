@@ -1,1 +1,111 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Yen-Wen Lu</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><div id="header"></div><main><section class="hero"><div class="container"><p class="kicker">NTU · Intelligent Microsystems</p><h1 id="heroTitle"></h1><p class="lead" id="heroText"></p><div class="actions"><a class="btn primary" href="projects.html" id="explore"></a><a class="btn ghost" href="publications.html" id="pubbtn"></a><a class="btn ghost" href="people.html" id="peoplebtn"></a></div></div></section><section class="section"><div class="container"><p class="kicker" id="pk"></p><h2 id="pt"></h2><p class="intro" id="pi"></p><div id="featured" class="grid cards"></div></div></section></main><div id="footer"></div><script>window.BASE="";</script><script src="app.js"></script><script>initShell();heroTitle.textContent=tx('Engineering Intelligent Microsystems','智慧微系統工程與轉譯應用');heroText.textContent=tx('Microfluidics, biomedical sensing, AI healthcare, soft robotics, wearable sensors, and thermal-energy engineering.','整合微流體、生醫感測、智慧醫療、軟性機器人、穿戴式感測與熱流能源工程。');explore.textContent=tx('Explore projects','探索研究');pubbtn.textContent=tx('Publications','著作');peoplebtn.textContent=tx('Meet the team','認識團隊');pk.textContent=tx('Featured research','代表研究');pt.textContent=tx('Research platforms with dedicated pages','具備獨立頁面的研究平台');pi.textContent=tx('Each research theme now has its own page for challenges, methods, highlights, publications, and collaboration opportunities.','每個研究主題皆有獨立頁面，呈現挑戰、方法、亮點、著作與合作機會。');load('data/projects.json').then(d=>featured.innerHTML=d.map(projectCard).join(''));</script></body></html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yen-Wen Lu | Intelligent Microsystems</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header"></div>
+<main>
+<section class="hero">
+  <div class="container">
+    <p class="kicker">NTU · Intelligent Microsystems</p>
+    <h1 id="heroTitle"></h1>
+    <p class="lead" id="heroText"></p>
+    <div class="actions">
+      <a class="btn primary" href="projects.html" id="explore"></a>
+      <a class="btn ghost" href="publications.html" id="pubbtn"></a>
+      <a class="btn ghost" href="people.html" id="peoplebtn"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="kicker" id="pk"></p>
+    <h2 id="pt"></h2>
+    <p class="intro" id="pi"></p>
+    <div id="featured" class="grid cards"></div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container spirit-layout">
+    <div>
+      <p class="kicker" id="spiritKicker"></p>
+      <h2 id="spiritTitle"></h2>
+      <p class="intro" id="spiritText"></p>
+      <div class="value-grid" id="values"></div>
+    </div>
+    <img class="spirit-image" id="spiritImage" alt="Lab spirit and research highlights">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading-v4">
+      <div>
+        <p class="kicker" id="latestKicker"></p>
+        <h2 id="latestTitle"></h2>
+      </div>
+      <a href="news.html" id="allNews"></a>
+    </div>
+    <div id="latestNews"></div>
+  </div>
+</section>
+
+<section class="section admin-promo">
+  <div class="container admin-layout">
+    <div>
+      <p class="kicker">V4 CONTENT WORKFLOW</p>
+      <h2 id="adminTitle"></h2>
+      <p class="intro" id="adminText"></p>
+    </div>
+    <a class="btn dark" href="admin.html" id="adminButton"></a>
+  </div>
+</section>
+</main>
+<div id="footer"></div>
+
+<script>window.BASE="";</script>
+<script src="app.js"></script>
+<script>
+initShell();
+heroTitle.textContent=tx('Engineering Intelligent Microsystems','智慧微系統工程與轉譯應用');
+heroText.textContent=tx('Microfluidics, biomedical sensing, AI healthcare, soft robotics, wearable sensors, and thermal-energy engineering.','整合微流體、生醫感測、智慧醫療、軟性機器人、穿戴式感測與熱流能源工程。');
+explore.textContent=tx('Explore projects','探索研究');
+pubbtn.textContent=tx('Publications','著作');
+peoplebtn.textContent=tx('Meet the team','認識團隊');
+pk.textContent=tx('Featured research','代表研究');
+pt.textContent=tx('Research platforms with dedicated pages','具備獨立頁面的研究平台');
+pi.textContent=tx('Each research theme presents its challenge, approach, highlights, and collaboration opportunities.','每個研究主題皆呈現研究挑戰、方法、亮點與合作機會。');
+spiritKicker.textContent=tx('Lab spirit','團隊精神');
+spiritTitle.textContent=tx('Serious science, supportive teamwork, meaningful impact','嚴謹科學、支持彼此、創造實際影響');
+spiritText.textContent=tx('We value creativity, responsibility, collaboration, excellence, and an international perspective. Great research grows from a team that can think deeply, experiment carefully, and enjoy the journey together.','我們重視創意、責任、合作、卓越與國際視野。好的研究來自能深入思考、嚴謹實驗，也能一起享受旅程的團隊。');
+latestKicker.textContent=tx('Latest updates','近期動態');
+latestTitle.textContent=tx('News and milestones','消息與里程碑');
+allNews.textContent=tx('View all news →','查看全部消息 →');
+adminTitle.textContent=tx('Update content without editing page layouts','不必修改版面，也能更新網站內容');
+adminText.textContent=tx('Use the built-in content editor to revise projects, people, publications, and news, then download the updated JSON files for GitHub.','使用內建內容編輯器修改研究、成員、著作與消息，再下載更新後的 JSON 檔案上傳至 GitHub。');
+adminButton.textContent=tx('Open content editor','開啟內容編輯器');
+
+const valuesData=[
+  ['Creativity','創意','Think differently','用不同角度思考'],
+  ['Impact','影響力','Solve real problems','解決真實問題'],
+  ['Collaboration','合作','Stronger together','一起做得更好'],
+  ['Excellence','卓越','Never stop learning','持續學習精進'],
+  ['International','國際','Global perspective','建立全球視野']
+];
+values.innerHTML=valuesData.map(v=>`<div class="value-card"><b>${tx(v[0],v[1])}</b><span>${tx(v[2],v[3])}</span></div>`).join('');
+
+Promise.all([load('data/projects.json'),load('data/news.json'),load('data/site.json')]).then(([projects,news,site])=>{
+  featured.innerHTML=projects.slice(0,6).map(projectCard).join('');
+  latestNews.innerHTML=news.slice(0,4).map(x=>`<article class="news-item"><time>${x.date} · ${tx(x.category,x.categoryZh)}</time><h3>${tx(x.title,x.titleZh)}</h3><p>${tx(x.text,x.textZh)}</p></article>`).join('');
+  spiritImage.src=site.spiritImage;
+});
+</script>
+</body>
+</html>

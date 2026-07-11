@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Content Editor | Yen-Wen Lu</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header"></div>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <button data-file="projects.json" class="active">Projects</button>
+    <button data-file="people.json">People</button>
+    <button data-file="publications.json">Publications</button>
+    <button data-file="news.json">News</button>
+    <button data-file="gallery.json">Gallery</button>
+    <button data-file="site.json">Site settings</button>
+  </aside>
+  <section class="admin-main">
+    <p class="kicker">LOCAL CONTENT EDITOR</p>
+    <h2 id="editorTitle">Projects</h2>
+    <div class="status" id="status">Edit carefully. This editor downloads updated JSON files; it does not directly write to GitHub.</div>
+    <div class="editor-toolbar">
+      <button class="btn dark" id="validateBtn">Validate JSON</button>
+      <button class="btn primary" id="downloadBtn">Download updated file</button>
+      <button class="btn dark" id="formatBtn">Format JSON</button>
+    </div>
+    <textarea class="editor-area" id="editor" spellcheck="false"></textarea>
+  </section>
+</main>
+<div id="footer"></div>
+<script>window.BASE="";</script>
+<script src="app.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
