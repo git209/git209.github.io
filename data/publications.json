@@ -1,54 +1,46 @@
 [
   {
-    "year": 2025,
-    "topic": "Biomedical Microfluidics",
-    "topicZh": "生醫微流體",
-    "title": "Add verified Lab on a Chip publication title",
-    "titleZh": "請填入已確認的 Lab on a Chip 論文題名",
-    "journal": "Lab on a Chip",
-    "authors": "Y.-W. Lu et al.",
+    "year": 2023,
+    "topic": "Digital Microfluidics",
+    "topicZh": "數位微流體",
+    "title": "Disk-TENG-powered digital microfluidics — verify full bibliographic title",
+    "journal": "Nano Energy",
+    "authors": "Yen-Wen Lu and collaborators",
     "doi": "#",
-    "featured": true,
-    "note": "Metadata placeholder — replace before formal launch.",
-    "noteZh": "書目資料示意，正式上線前請替換。"
+    "status": "Verified journal and year; full citation requires confirmation.",
+    "statusZh": "期刊與年份已知；完整書目仍需確認。"
   },
   {
     "year": 2023,
     "topic": "Wearable Sensors",
     "topicZh": "穿戴式感測",
-    "title": "Add verified wearable tactile sensor publication title",
-    "titleZh": "請填入已確認的穿戴式觸覺感測論文題名",
+    "title": "Wearable high-sensitivity tactile sensor — verify full bibliographic title",
     "journal": "Biosensors",
-    "authors": "Y.-W. Lu et al.",
+    "authors": "Yen-Wen Lu and collaborators",
     "doi": "#",
-    "featured": true,
-    "note": "Metadata placeholder — replace before formal launch.",
-    "noteZh": "書目資料示意，正式上線前請替換。"
+    "status": "Verified journal and year; full citation requires confirmation.",
+    "statusZh": "期刊與年份已知；完整書目仍需確認。"
   },
   {
-    "year": 2023,
-    "topic": "Digital Microfluidics",
-    "topicZh": "數位微流體",
-    "title": "Add verified Disk-TENG digital microfluidics publication title",
-    "titleZh": "請填入已確認的 Disk-TENG 數位微流體論文題名",
-    "journal": "Nano Energy",
-    "authors": "Y.-W. Lu et al.",
+    "year": 2025,
+    "topic": "Biomedical Microfluidics",
+    "topicZh": "生醫微流體",
+    "title": "Collaborative Lab on a Chip publication — verify full bibliographic title",
+    "journal": "Lab on a Chip",
+    "authors": "Yen-Wen Lu laboratory and collaborators",
     "doi": "#",
-    "featured": true,
-    "note": "Metadata placeholder — replace before formal launch.",
-    "noteZh": "書目資料示意，正式上線前請替換。"
+    "status": "Journal and approximate timing known; complete citation pending.",
+    "statusZh": "已知期刊與大致時間；完整引用待確認。"
   },
   {
-    "year": 2022,
+    "year": 2026,
     "topic": "AI Healthcare",
     "topicZh": "智慧醫療",
-    "title": "Add verified online hemodialysis monitoring publication title",
-    "titleZh": "請填入已確認的血液透析線上監測論文題名",
-    "journal": "Journal to verify",
-    "authors": "Y.-W. Lu et al.",
+    "title": "Online hemodialysis monitoring with optical sensing and machine learning",
+    "journal": "Metadata to verify",
+    "authors": "Yen-Wen Lu and collaborators",
     "doi": "#",
-    "featured": false,
-    "note": "Metadata placeholder — replace before formal launch.",
-    "noteZh": "書目資料示意，正式上線前請替換。"
+    "status": "Research content verified; publication metadata pending.",
+    "statusZh": "研究內容已確認；出版資訊待確認。"
   }
 ]

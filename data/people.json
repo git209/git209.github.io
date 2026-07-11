@@ -3,88 +3,67 @@
     "id": "yen-wen-lu",
     "name": "Prof. Yen-Wen Lu",
     "nameZh": "盧彥文 教授",
-    "group": "Principal Investigator",
-    "groupZh": "主持人",
-    "image": "../assets/people/lab-group-2023.webp",
-    "research": [
+    "role": "Principal Investigator",
+    "roleZh": "主持人",
+    "image": "assets/team/lulab-2024.jpg",
+    "bio": "Professor Lu leads interdisciplinary research in microfluidics, biomedical microsystems, intelligent healthcare, soft robotics, and thermal-fluid engineering.",
+    "bioZh": "盧教授帶領微流體、生醫微系統、智慧醫療、軟性機器人與熱流工程等跨領域研究。",
+    "interests": [
       "Microfluidics",
       "Biomedical MEMS",
       "AI Healthcare",
       "Soft Robotics",
       "Thermal-fluid Engineering"
-    ],
-    "researchZh": [
-      "微流體",
-      "生醫微機電",
-      "智慧醫療",
-      "軟性機器人",
-      "熱流工程"
-    ],
-    "bio": "Professor Lu leads interdisciplinary research connecting microsystems, sensing, artificial intelligence, and translational engineering.",
-    "bioZh": "盧教授帶領跨領域研究，整合微系統、感測、人工智慧與工程轉譯應用。",
-    "email": "your-email@ntu.edu.tw"
+    ]
   },
   {
-    "id": "postdoctoral-team",
-    "name": "Postdoctoral & Research Team",
-    "nameZh": "博士後與研究團隊",
-    "group": "Researchers",
-    "groupZh": "研究人員",
-    "image": "../assets/people/international-team-2022.webp",
-    "research": [
+    "id": "postdoctoral-researchers",
+    "name": "Postdoctoral Fellows & Researchers",
+    "nameZh": "博士後與研究人員",
+    "role": "Research Team",
+    "roleZh": "研究團隊",
+    "image": "assets/team/kku-visit-2025.jpg",
+    "bio": "Researchers contribute independent execution, system integration, mentoring, and international collaboration.",
+    "bioZh": "研究人員負責獨立執行、系統整合、協助指導與國際合作。",
+    "interests": [
       "System Integration",
-      "Experimental Validation",
+      "Independent Research",
+      "Mentoring",
       "International Collaboration"
-    ],
-    "researchZh": [
-      "系統整合",
-      "實驗驗證",
-      "國際合作"
-    ],
-    "bio": "Researchers contribute independent project execution, mentoring, and system-level integration.",
-    "bioZh": "研究人員負責獨立執行計畫、協助指導與系統層級整合。",
-    "email": ""
+    ]
   },
   {
     "id": "graduate-students",
     "name": "Graduate Students",
     "nameZh": "研究生",
-    "group": "Students",
-    "groupZh": "學生",
-    "image": "../assets/people/students-2023.webp",
-    "research": [
-      "Device Design",
-      "Data Analysis",
-      "Scientific Writing"
-    ],
-    "researchZh": [
-      "元件設計",
-      "資料分析",
-      "科學寫作"
-    ],
-    "bio": "Graduate students receive training from experimental design through publication and technology demonstration.",
-    "bioZh": "研究生接受從實驗設計、研究執行到論文發表與技術展示的完整訓練。",
-    "email": ""
+    "role": "Future Researchers",
+    "roleZh": "未來研究者",
+    "image": "assets/team/lab-students-2023.jpg",
+    "bio": "Graduate students are trained to become creative, independent, responsible, and internationally minded researchers who can turn ideas into real-world impact.",
+    "bioZh": "研究生的培育目標，是成為具創意、獨立性、責任感與國際視野，並能將想法轉化為真實影響的研究者。",
+    "interests": [
+      "Hands-on Research",
+      "Independent Thinking",
+      "Scientific Writing",
+      "Teamwork",
+      "Real-World Impact"
+    ]
   },
   {
-    "id": "alumni-network",
+    "id": "alumni",
     "name": "Alumni Network",
     "nameZh": "校友網絡",
-    "group": "Alumni",
-    "groupZh": "校友",
-    "image": "../assets/people/alumni-history-2007.webp",
-    "research": [
+    "role": "Industry & Academia",
+    "roleZh": "產業與學術",
+    "image": "assets/team/labgroup-2023.jpg",
+    "bio": "Alumni continue their careers in technology companies, research institutes, hospitals, startups, and universities.",
+    "bioZh": "校友持續於科技企業、研究機構、醫療體系、新創與大學發展。",
+    "interests": [
       "Industry",
       "Academia",
-      "International Graduate Study"
-    ],
-    "researchZh": [
-      "產業",
-      "學術",
-      "國際深造"
-    ],
-    "bio": "Alumni continue their careers in leading technology companies, research institutes, and universities.",
-    "bioZh": "校友於指標性科技企業、研究機構與大學持續發展。",
-    "email": ""
+      "Healthcare",
+      "Startups",
+      "International Study"
+    ]
   }
 ]

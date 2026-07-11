@@ -1,12 +1,15 @@
 {
-  "siteName": "Yen-Wen Lu Research Group",
-  "siteNameZh": "盧彥文智慧微系統研究團隊",
+  "name": "Yen-Wen Lu",
+  "nameZh": "盧彥文",
+  "lab": "Microfluidics & Intelligent Microsystems Laboratory",
+  "labZh": "微流體與智慧微系統研究團隊",
   "institution": "National Taiwan University",
   "institutionZh": "國立臺灣大學",
   "email": "your-email@ntu.edu.tw",
   "scholar": "#",
   "orcid": "#",
   "linkedin": "#",
-  "heroImage": "assets/hero-bg.png",
-  "spiritImage": "assets/creative/lab-spirit-banner.png"
+  "heroImage": "assets/brand/lulab-2024.jpg",
+  "teamImage": "assets/team/lulab-2024.jpg",
+  "spiritImage": "assets/brand/lab-halloween-2023.jpg"
 }

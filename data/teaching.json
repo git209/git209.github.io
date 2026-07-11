@@ -1,0 +1,56 @@
+{
+  "philosophy": [
+    [
+      "Learn by Doing",
+      "從實作中學習",
+      "Students work with real devices, imperfect data, and practical constraints.",
+      "讓學生面對真實元件、不完美資料與實際限制。"
+    ],
+    [
+      "Ask Why",
+      "持續追問為什麼",
+      "Mechanistic understanding matters more than following a procedure.",
+      "理解機制，比單純照著程序操作更重要。"
+    ],
+    [
+      "Grow Independent",
+      "培養獨立研究",
+      "Students gradually learn to define questions, design experiments, and defend conclusions.",
+      "逐步學會定義問題、設計實驗並為結論負責。"
+    ],
+    [
+      "Communicate Clearly",
+      "清楚溝通",
+      "Good research must be explained through writing, figures, presentations, and discussion.",
+      "好的研究必須能透過寫作、圖表、簡報與討論清楚表達。"
+    ],
+    [
+      "Collaborate Globally",
+      "參與國際合作",
+      "Different disciplines and cultures strengthen both science and people.",
+      "不同專業與文化能同時提升研究與個人成長。"
+    ],
+    [
+      "Create Impact",
+      "創造實際影響",
+      "Research should connect to clinical, industrial, or societal needs whenever possible.",
+      "研究應盡可能與臨床、產業或社會需求產生連結。"
+    ]
+  ],
+  "graduateTraining": [
+    "Device and system design",
+    "Microfabrication and experimental methods",
+    "Data analysis and AI-assisted modeling",
+    "Scientific writing, peer review, and presentation",
+    "Patent, technology transfer, and translational thinking",
+    "International collaboration and professional development"
+  ],
+  "graduateTrainingZh": [
+    "元件與系統設計",
+    "微製造與實驗方法",
+    "資料分析與 AI 輔助建模",
+    "科學寫作、同儕審查與簡報",
+    "專利、技轉與轉譯思維",
+    "國際合作與職涯發展"
+  ]
+}
