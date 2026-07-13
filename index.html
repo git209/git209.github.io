@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Yen-Wen Lu Lab V7 | Engineering for Better Life</title>
+  <title>Yen-Wen Lu Lab | Miniaturized Chips for Better Life</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="v6.css">
@@ -24,22 +24,16 @@
       </div>
     </section>
 
-    <section class="v6-band v7-statement">
-      <div class="container">
-        <p id="statement"></p>
-      </div>
-    </section>
-
-    <section class="section v7-routes-section">
-      <div class="container">
-        <p class="kicker">START HERE</p>
-        <h2 id="routeTitle"></h2>
-        <p class="intro" id="routeLead"></p>
-        <div class="v7-route-grid" id="routeGrid"></div>
-      </div>
-    </section>
-
     <section class="section">
+      <div class="container">
+        <p class="kicker">RESEARCH TOPICS</p>
+        <h2 id="valueTitle"></h2>
+        <p class="intro" id="valueLead"></p>
+        <div class="v6-systems" id="systems"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
       <div class="container">
         <p class="kicker">FEATURED COVER RESEARCH</p>
         <div class="v6-feature">
@@ -55,36 +49,24 @@
       </div>
     </section>
 
-    <section class="section soft">
-      <div class="container">
-        <p class="kicker">PROFESSOR BRAND</p>
-        <h2 id="stanceTitle"></h2>
-        <p class="intro" id="stanceLead"></p>
-        <div class="join-points" id="stancePoints"></div>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <p class="kicker">RESEARCH FOR BETTER LIFE</p>
-        <h2 id="valueTitle"></h2>
-        <p class="intro" id="valueLead"></p>
-        <div class="v6-systems" id="systems"></div>
+        <div class="application-grid compact-applications" id="applications"></div>
       </div>
     </section>
 
     <section class="section soft">
       <div class="container">
-        <p class="kicker">APPLICATION ROUTES</p>
-        <h2 id="appTitle"></h2>
-        <p class="intro" id="appLead"></p>
-        <div class="application-grid" id="applications"></div>
+        <p class="kicker">TEACHING</p>
+        <h2 id="teachTitle"></h2>
+        <p class="intro" id="teachLead"></p>
+        <a class="text-link" href="teaching.html" id="teachLink"></a>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <p class="kicker">JOIN THE TEAM</p>
+        <p class="kicker">INTERNATIONAL COLLABORATION & STUDENTS</p>
         <h2 id="joinTitle"></h2>
         <p class="intro" id="joinLead"></p>
         <div class="join-points" id="joinPoints"></div>
@@ -107,36 +89,22 @@
   <script>
     initShell();
     title.textContent = v6Text(
-      "Engineering small systems for better life",
-      "以小型工程系統，連結更好的生活"
+      "Miniaturized chips for better technology and life",
+      "微型化晶片，更好人類科技生活"
     );
     lead.textContent = v6Text(
-      "We build microfluidic, wearable, sensing, and intelligent mechatronic systems for biomedical care, rehabilitation, sports science, breeding, animal medicine, and bio-industry. The same belief connects research and teaching: a good idea must become a device, a measurement, and evidence that others can trust.",
-      "我們發展微流體、穿戴式感測、智慧機電與資料分析系統，面向生物醫學、復健、運動科學、育種、動物醫學與生物產業。研究與教學背後的信念一致：好的想法必須走向裝置、量測，以及能被他人信任的證據。"
+      "We develop microfluidic chips, sensing devices, and intelligent mechatronic systems that help small-volume samples, physiological signals, and biological processes become measurable engineering evidence.",
+      "我們發展微流體晶片、感測裝置與智慧機電系統，讓小體積樣品、生理訊號與生物流程，轉化為可量測、可驗證的工程證據。"
     );
     researchBtn.textContent = v6Text("Research topics","研究題目");
     intlBtn.textContent = v6Text("International collaboration","國際合作與學生");
     collabBtn.textContent = v6Text("Industry collaboration","產學合作");
-    statement.textContent = v6Text(
-      "V7 focuses the website around three promises: clear research topics, a visible training path for Taiwan and international students, and collaboration opportunities where engineering can move from a laboratory prototype toward real validation.",
-      "V7 將網站聚焦在三個承諾：清楚呈現研究題目、讓台灣與國際學生看見訓練路徑，並讓產學合作夥伴理解技術如何從實驗室原型走向真實驗證。"
-    );
 
-    routeTitle.textContent = v6Text("Choose the path that matches why you are here","依照你的目的，快速進入網站");
-    routeLead.textContent = v6Text(
-      "The homepage is written for several readers at once: prospective students, current collaborators, industry partners, and international visitors.",
-      "首頁同時服務幾種讀者：想加入的學生、既有合作夥伴、產業夥伴與國際訪客。"
+    valueTitle.textContent = v6Text("Research topics connected to measurement, care, and production","研究題目連到量測、照護與生產流程");
+    valueLead.textContent = v6Text(
+      "Each project starts from a bottleneck: a sample is difficult to prepare, a signal is difficult to measure, a device is difficult to stabilise, or a biological process needs better engineering control.",
+      "每個題目都從瓶頸開始：樣品難以前處理、訊號不易量測、裝置需要更穩定，或生物流程需要更好的工程控制。"
     );
-    const routes = [
-      ["Research Topics","For readers who want to understand microfluidics, sensing, AI hemodialysis, soft robotics, and thermal-fluid systems.","research.html","研究題目","理解微流體、感測、AI 透析、軟機器人與熱流系統等研究。"],
-      ["International Collaboration & Students","For Taiwan students, international students, exchange students, and global partners who want to see the lab culture and training path.","international.html","國際合作與學生","給台灣學生、國際學生、交換生與國際夥伴，看見實驗室文化與訓練路徑。"],
-      ["Industry Collaboration","For hospitals, companies, and technical partners interested in validation, prototypes, sensing systems, and translational projects.","collaboration.html","產學合作","給醫院、公司與技術夥伴，了解驗證、原型、感測系統與轉譯合作。"]
-    ];
-    routeGrid.innerHTML = routes.map(x => `
-      <a class="v7-route-card" href="${x[2]}">
-        <span>${v6Text(x[0],x[3])}</span>
-        <p>${v6Text(x[1],x[4])}</p>
-      </a>`).join("");
 
     coverPill.textContent = v6Text("Lab on a Chip 2024 · Cover feature","Lab on a Chip 2024 · 封面特色");
     coverTitle.textContent = v6Text(
@@ -150,69 +118,45 @@
     const points = [
       ["Problem addressed","Turns a difficult forensic sample-preparation problem into a microfluidic separation workflow."],
       ["Research quality","Selected as a Lab on a Chip cover feature and built on measurable recovery, purity, and STR-readout performance."],
-      ["Research attitude","A clear example for students: physics, device design, and biological analysis must be checked by data."]
+      ["Research attitude","A clear example for students: physics, device design, and biological analysis must be tested together."]
     ];
     const pointsZh = [
       ["解決的問題","把困難的法醫樣品前處理問題，轉化為可操作的微流體分離流程。"],
       ["研究品質","獲選 Lab on a Chip 封面特色，並以回收率、純度與 STR 讀出表現支撐成果。"],
-      ["研究態度","很適合學生理解：物理機制、晶片設計與生物分析都要回到數據檢查。"]
+      ["研究態度","很適合學生理解：物理機制、晶片設計與生物分析需要一起驗證。"]
     ];
     coverPoints.innerHTML = (state.lang === "zh" ? pointsZh : points).map(x =>
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
     ).join("");
     coverLink.textContent = v6Text("Read the acoustofluidics story →","閱讀聲流體研究故事 →");
 
-    stanceTitle.textContent = v6Text(
-      "Persistence in research, care in teaching, and honesty in evidence",
-      "研究的執著、教學的細緻，以及對證據的誠實"
-    );
-    stanceLead.textContent = v6Text(
-      "The lab is built around topics that matter beyond one paper: devices for health, biological analysis, intelligent monitoring, and energy-related reliability. Students learn the attitude behind those results: do the experiment, face the data, revise the system, and explain it clearly.",
-      "實驗室的題目不只為了一篇論文，而是面向健康、生命分析、智慧監測與能源可靠度等長期問題。學生在這些題目中學到成果背後的態度：做實驗、面對數據、修正系統，並把它說清楚。"
-    );
-    const stance = [
-      ["Research persistence","Use real bottlenecks to drive device design, experiments, and data analysis."],
-      ["Teaching persistence","Train students to read, build, measure, make figures, write, and explain their own result."],
-      ["Collaboration target","Seek partners who can help a technology face a real validation path, not only a demonstration."]
-    ];
-    const stanceZh = [
-      ["研究上的執著","用真實瓶頸推動裝置設計、實驗與資料分析。"],
-      ["教學上的執著","訓練學生閱讀、製作、量測、作圖、寫作，並說清楚自己的成果。"],
-      ["合作的目標","尋找能讓技術面對真實驗證路徑的夥伴，而不只是展示。"]
-    ];
-    stancePoints.innerHTML = (state.lang === "zh" ? stanceZh : stance).map(x =>
-      `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
-    ).join("");
-
-    valueTitle.textContent = v6Text("Research topics connected to measurement, care, and production","研究題目連到量測、照護與生產流程");
-    valueLead.textContent = v6Text(
-      "A project starts with a bottleneck: a sample is hard to prepare, a signal is hard to measure, a patient or animal condition is hard to follow, or a biological process needs better engineering control.",
-      "題目從瓶頸開始：樣品難以前處理、訊號不易量測、病人或動物狀態難以追蹤，或生物產業流程需要更好的工程控制。"
-    );
-    appTitle.textContent = v6Text("Where the devices can be used","裝置可以進入哪些場域");
-    appLead.textContent = v6Text(
-      "Wearable devices and microfluidic systems are developed as engineering tools for biomedical use, rehabilitation, sports science, breeding, and animal medicine.",
-      "穿戴型裝置與微流體系統不是展示用元件，而是面向生物醫學、復健、運動科學、育種與動物醫學的工程工具。"
-    );
     const appItems = [
-      ["Biomedical engineering","Microfluidic sample preparation, dialysis monitoring, and sensing systems for health-related decisions."],
-      ["Rehabilitation and sports science","Wearable pressure, motion, and physiological sensing for recovery, posture, training, and performance tracking."],
-      ["Breeding and bio-industry","Sensors and data workflows for animal physiology, environmental response, and production-process decisions."],
-      ["Animal medicine","Mechatronic sensing platforms that help follow animal health with repeatable measurement."]
+      ["Biomedical engineering","Microfluidic sample preparation, dialysis monitoring, and sensing systems for health-related research and decision support."],
+      ["Rehabilitation and sports science","Wearable pressure, motion, and physiological sensing for posture, recovery, training, and performance tracking."],
+      ["Breeding and bio-industry","Sensors and data workflows for animal physiology, environmental response, and production-process observation."],
+      ["Animal medicine","Mechatronic sensing platforms that support repeatable measurement of animal-health indicators."]
     ];
     const appItemsZh = [
-      ["生物醫學工程","微流體樣品前處理、透析監測與健康決策相關感測系統。"],
+      ["生物醫學工程","微流體樣品前處理、透析監測與健康研究／決策支援相關感測系統。"],
       ["復健與運動科學","用穿戴式壓力、動作與生理感測追蹤恢復、姿態、訓練與表現。"],
-      ["育種與生物產業","以感測器與資料流程追蹤動物生理、環境反應與生產流程決策。"],
-      ["動物醫學","以機電感測平台建立可重複的動物健康量測。"]
+      ["育種與生物產業","以感測器與資料流程觀察動物生理、環境反應與生產流程。"],
+      ["動物醫學","以機電感測平台支援動物健康指標的可重複量測。"]
     ];
     applications.innerHTML = (state.lang === "zh" ? appItemsZh : appItems).map(x =>
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
     ).join("");
+
+    teachTitle.textContent = v6Text("Courses connect fundamentals with devices students can design, build, and explain","課程把基礎觀念連到學生能設計、製作與說明的裝置");
+    teachLead.textContent = v6Text(
+      "Teaching covers semiconductor processing, fluid mechanics, bio lab-on-a-chip systems, and engineering graphics with computer-aided drawing.",
+      "教學涵蓋半導體製程與實務、流體力學、生物實驗室晶片，以及工程圖學與電腦繪圖。"
+    );
+    teachLink.textContent = v6Text("View teaching courses →","查看教學課程 →");
+
     joinTitle.textContent = v6Text("Students who want to connect engineering with life systems are welcome","歡迎想把工程連到生命系統的同學加入");
     joinLead.textContent = v6Text(
-      "The team is a good fit for Taiwan and international students who are interested in mechanical engineering, mechatronics, biomedical engineering, data science, and hands-on device development.",
-      "如果你是台灣或國際學生，對機械、機電、生醫工程、數據科學與動手製作裝置有興趣，這裡會有適合你練習與成長的題目。"
+      "The team is a good fit for Taiwan and international students who want to connect mechanical engineering, mechatronics, biomedical engineering, data science, and hands-on device development.",
+      "如果你是台灣或國際學生，想把機械、機電、生醫工程、數據科學與動手製作裝置連在一起，這裡會有適合你練習與成長的題目。"
     );
     const joinItems = [
       ["Mechanical / mechatronics","Design mechanisms, fixtures, microfluidic structures, sensors, and test platforms."],

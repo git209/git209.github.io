@@ -2,7 +2,8 @@
 
 V7 is a recruitment- and collaboration-focused academic website for Prof. Yen-Wen Lu's lab.
 
-Brand: **Engineering Devices for Better Life**
+Brand: **Miniaturized Chips for Better Technology and Life**  
+Chinese homepage message: **微型化晶片，更好人類科技生活**
 
 ## V7 focus
 

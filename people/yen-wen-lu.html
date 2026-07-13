@@ -1,1 +1,74 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prof. Yen-Wen Lu | Yen-Wen Lu</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css"></head><body><div id="header"></div><main><section class="page-hero"><div class="container"><p class="kicker" id="role"></p><h1 id="name"></h1><p id="bio"></p></div></section><section class="section"><div class="container profile-hero"><img id="img"><div><h2 id="fh"></h2><div id="ints" class="tag-row"></div></div></div></section><section class="section soft" id="grad"><div class="container"><h2 id="gh"></h2><div id="cards" class="story-grid"></div></div></section></main><div id="footer"></div><script>window.BASE="../";</script><script src="../app.js"></script><script>initShell("people");load("data/people.json").then(d=>{const p=d.find(x=>x.id==="yen-wen-lu");role.textContent=tx(p.role,p.roleZh);name.textContent=tx(p.name,p.nameZh);bio.textContent=tx(p.bio,p.bioZh);img.src="../"+p.image;fh.textContent=tx("Research and professional development","研究與專業發展");ints.innerHTML=p.interests.map(x=>`<span class="tag">${x}</span>`).join("");if(p.id!=="graduate-students")grad.style.display="none";else{gh.textContent=tx("What graduate students learn beyond a research topic","研究生在題目之外會學到什麼");const a=[["Learn by doing","從實作中學習"],["Ask why","持續追問為什麼"],["Take ownership","對研究負責"],["Communicate clearly","清楚溝通"],["Work across disciplines","跨領域合作"],["Create impact","創造影響"]];cards.innerHTML=a.map(x=>`<article class="story-card"><h3>${tx(x[0],x[1])}</h3></article>`).join("");}});</script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prof. Yen-Wen Lu | Yen-Wen Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../v6.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker" id="role"></p>
+        <h1 id="name"></h1>
+        <p id="bio"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container profile-hero">
+        <img id="img" alt="Prof. Yen-Wen Lu">
+        <div>
+          <h2 id="fh"></h2>
+          <div id="ints" class="tag-row"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">PROFESSOR BRAND</p>
+        <h2 id="brandH"></h2>
+        <p class="intro" id="brandP"></p>
+        <div class="join-points" id="brandCards"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>window.BASE="../";</script>
+  <script src="../app.js"></script>
+  <script>
+    initShell("people");
+    load("data/people.json").then(d => {
+      const p = d.find(x => x.id === "yen-wen-lu");
+      role.textContent = tx(p.role,p.roleZh);
+      name.textContent = tx(p.name,p.nameZh);
+      bio.textContent = tx(p.bio,p.bioZh);
+      img.src = "../" + p.image;
+      fh.textContent = tx("Research and professional development","研究與專業發展");
+      ints.innerHTML = p.interests.map(x => `<span class="tag">${x}</span>`).join("");
+    });
+
+    brandH.textContent = tx(
+      "Persistence in research, care in teaching, and honesty in evidence",
+      "研究的執著、教學的細緻，以及對證據的誠實"
+    );
+    brandP.textContent = tx(
+      "The lab is built around topics that matter beyond one paper: devices for health, biological analysis, intelligent monitoring, and engineering systems that can be tested in real settings.",
+      "實驗室的題目不只為了一篇論文，而是面向健康、生命分析、智慧監測，以及能在真實場域中被測試的工程系統。"
+    );
+    const brand = [
+      ["Research persistence","Use real bottlenecks to drive device design, experiments, and data analysis.","研究上的執著","用真實瓶頸推動裝置設計、實驗與資料分析。"],
+      ["Teaching persistence","Train students to read, build, measure, make figures, write, and explain their own result.","教學上的執著","訓練學生閱讀、製作、量測、作圖、寫作，並說清楚自己的成果。"],
+      ["Collaboration target","Seek partners who can help a technology face a real validation path, not only a demonstration.","合作的目標","尋找能讓技術面對真實驗證路徑的夥伴，而不只是展示。"]
+    ];
+    brandCards.innerHTML = brand.map(x =>
+      `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`
+    ).join("");
+  </script>
+</body>
+</html>

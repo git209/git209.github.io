@@ -18,38 +18,22 @@
         <p id="lead"></p>
       </div>
     </section>
+
     <section class="section">
-      <div class="container">
-        <p class="kicker">TEACHING THROUGH RESEARCH</p>
-        <h2 id="stanceH"></h2>
-        <p class="intro" id="stanceP"></p>
-        <div id="ph" class="story-grid"></div>
-      </div>
-    </section>
-    <section class="section soft">
       <div class="container">
         <p class="kicker">COURSES I TEACH</p>
         <h2 id="coursesH"></h2>
         <p class="intro" id="coursesP"></p>
-        <div class="v6-systems" id="courses"></div>
+        <div class="teaching-course-list" id="courses"></div>
       </div>
     </section>
-    <section class="section">
-      <div class="container split">
-        <img src="assets/team/team-students.webp" alt="Students in the laboratory">
-        <div>
-          <p class="kicker">STUDENT TRAINING</p>
-          <h2 id="gh"></h2>
-          <p class="intro" id="gt"></p>
-          <div id="training" class="tag-row"></div>
-        </div>
-      </div>
-    </section>
+
     <section class="section soft">
       <div class="container">
-        <p class="kicker">WHO CAN GROW HERE</p>
-        <h2 id="fitH"></h2>
-        <div class="application-grid" id="fit"></div>
+        <p class="kicker">TEACHING CONNECTION</p>
+        <h2 id="connectH"></h2>
+        <p class="intro" id="connectP"></p>
+        <div class="application-grid" id="connections"></div>
       </div>
     </section>
   </main>
@@ -59,76 +43,77 @@
   <script src="v6.js"></script>
   <script>
     initShell("teaching");
-    title.textContent = tx("Teaching students to turn effort into evidence","訓練學生把努力變成證據");
+    title.textContent = tx("Courses that connect engineering fundamentals with real devices","把工程基礎連到真實裝置的課程");
     lead.textContent = tx(
-      "Teaching in the lab is not separated from research. Students learn by reading, building, measuring, analysing, revising, and communicating a result that can stand in front of others.",
-      "實驗室的教學不與研究分開。學生透過閱讀、製作、量測、分析、修正與表達，學會把成果放到別人面前接受檢驗。"
+      "My teaching focuses on four courses: Semiconductor Processing and Practice, Fluid Mechanics, Bio Lab-on-a-Chip Systems, and Engineering Graphics with Computer-Aided Drawing.",
+      "我的教學目前以四門課為主：半導體製程與實務、流體力學、生物實驗室晶片、工程圖學與電腦繪圖。"
     );
-    stanceH.textContent = tx("The point is not only to finish a task","重點不只是完成交辦事項");
-    stanceP.textContent = tx(
-      "Students are trained to understand why a device works, why data may be unreliable, and how to make the next experiment stronger.",
-      "我們訓練學生理解裝置為何有效、資料為何可能不可靠，以及如何讓下一個實驗更有說服力。"
-    );
-    gh.textContent = tx("How we train future researchers","我們如何培育未來研究者");
-    gt.textContent = tx(
-      "Students gradually move from learning methods to understanding mechanisms, defining problems, and leading a complete research story.",
-      "學生逐步從學會方法，走向理解機制、定義問題，並主導完整研究故事。"
-    );
-    fitH.textContent = tx("Taiwan students, international students, undergraduates, graduate students, and exchange students","台灣學生、國際學生、大學生、研究生與交換生");
-    coursesH.textContent = tx("Three course themes: fluids, fabrication, and lab-on-a-chip systems","三個教學主題：流體、製程與生物實驗室晶片");
+    coursesH.textContent = tx("Four courses, one training direction","四門課，一個訓練方向");
     coursesP.textContent = tx(
-      "These courses connect engineering fundamentals to devices students can see, make, measure, and eventually use in research.",
-      "這些課程把工程基礎連到學生看得到、做得出、量得到，並能延伸到研究中的裝置。"
+      "Students learn how physical principles, fabrication processes, drawing language, and microfluidic systems become practical tools for biomedical and engineering problem solving.",
+      "學生學習物理原理、製程方法、圖學語言與微流體系統，如何成為解決生醫與工程問題的實用工具。"
     );
     const courseData = [
-      [
-        "assets/research/acoustofluidics.webp",
-        "Fluid Mechanics",
-        "Students learn pressure, flow, boundary layers, dimensional analysis, and transport thinking, then connect those ideas to microfluidics, cooling, biological flows, and device design.",
-        "流體力學",
-        "學生學習壓力、流動、邊界層、因次分析與傳輸思考，再把這些觀念連到微流體、散熱、生物流動與裝置設計。"
-      ],
-      [
-        "assets/research/ntu-biomedical-cleanroom.jpg",
-        "Semiconductor Processing and Practice",
-        "The course introduces cleanroom thinking, lithography, thin films, etching, process flow, contamination control, and hands-on links between fabrication steps and device performance.",
-        "半導體製程與實務",
-        "課程介紹無塵室觀念、微影、薄膜、蝕刻、製程流程、污染控制，以及製程步驟如何影響元件表現。"
-      ],
-      [
-        "assets/research/lab-on-a-chip-concept.jpg",
-        "Introduction to Bio-Lab-on-a-Chip",
-        "Students learn how microchannels, droplets, valves, acoustic actuation, and biosensing can turn biological samples into measurable information on a chip.",
-        "生物實驗室晶片導論",
-        "學生學習微通道、液滴、閥件、聲波驅動與生醫感測，如何把生物樣品轉化為晶片上的可量測資訊。"
-      ]
+      {
+        image:"assets/research/ntu-biomedical-cleanroom.jpg",
+        en:"Semiconductor Processing and Practice",
+        zh:"半導體製程與實務",
+        enText:"This course introduces cleanroom practice, lithography, thin films, etching, process flow, contamination control, and the practical link between fabrication steps and device performance.",
+        zhText:"課程介紹無塵室實務、微影、薄膜、蝕刻、製程流程與污染控制，並說明製程步驟如何影響元件表現。",
+        tags:["Cleanroom","Lithography","Thin films","Etching"],
+        tagsZh:["無塵室","微影","薄膜","蝕刻"]
+      },
+      {
+        image:"assets/research/bess-parallel-flow-concept.png",
+        en:"Fluid Mechanics",
+        zh:"流體力學",
+        enText:"Students learn pressure, flow, boundary layers, dimensional analysis, and transport thinking, then connect these ideas to microfluidics, cooling systems, biological flows, and device design.",
+        zhText:"學生學習壓力、流動、邊界層、因次分析與傳輸思考，再把這些觀念連到微流體、散熱、生物流動與裝置設計。",
+        tags:["Pressure","Flow","Boundary layer","Transport"],
+        tagsZh:["壓力","流動","邊界層","傳輸"]
+      },
+      {
+        image:"assets/research/lab-on-a-chip-concept.jpg",
+        en:"Bio Lab-on-a-Chip Systems",
+        zh:"生物實驗室晶片",
+        enText:"This course explains how microchannels, droplets, valves, acoustic actuation, and biosensing can turn biological samples into measurable information on a chip.",
+        zhText:"課程說明微通道、液滴、閥件、聲波驅動與生醫感測，如何把生物樣品轉化為晶片上的可量測資訊。",
+        tags:["Microchannels","Droplets","Valves","Biosensing"],
+        tagsZh:["微通道","液滴","閥件","生醫感測"]
+      },
+      {
+        image:"assets/research/lego-afm-demo.jpg",
+        en:"Engineering Graphics and Computer-Aided Drawing",
+        zh:"工程圖學與電腦繪圖",
+        enText:"Students develop the graphical language needed to express engineering ideas, read technical drawings, communicate dimensions and tolerances, and use CAD tools for design communication.",
+        zhText:"學生建立表達工程概念所需的圖學語言，學會閱讀工程圖、標註尺寸與公差，並使用電腦輔助繪圖工具進行設計溝通。",
+        tags:["Engineering drawing","CAD","Dimensioning","Design communication"],
+        tagsZh:["工程圖","CAD","尺寸標註","設計溝通"]
+      }
     ];
-    courses.innerHTML = courseData.map(x => `
-      <article class="v6-system">
-        <img src="${x[0]}" alt="">
+    courses.innerHTML = courseData.map((c,i) => `
+      <article class="teaching-course">
+        <div class="teaching-image"><img src="${c.image}" alt="${tx(c.en,c.zh)}"></div>
         <div>
-          <span class="pill">${tx("Course","課程")}</span>
-          <h3>${tx(x[1],x[3])}</h3>
-          <p>${tx(x[2],x[4])}</p>
+          <span class="pill">${tx("Course","課程")} ${String(i + 1).padStart(2,"0")}</span>
+          <h3>${tx(c.en,c.zh)}</h3>
+          <p>${tx(c.enText,c.zhText)}</p>
+          <div class="tag-row">${(state.lang === "zh" ? c.tagsZh : c.tags).map(t => `<span class="tag">${t}</span>`).join("")}</div>
         </div>
       </article>`).join("");
-    const cards = [
-      ["Read before building","Start from papers, prior data, and a clear question before touching the device.","先讀懂再動手","動手前先理解論文、既有資料與清楚問題。"],
-      ["Build with constraints","Make prototypes under limits: sample volume, cost, time, reliability, and validation.","在限制中製作","在樣品量、成本、時間、可靠度與驗證限制下完成原型。"],
-      ["Measure with discipline","Record conditions, organise data, make figures, and check whether the result supports the claim.","有紀律地量測","記錄條件、整理資料、製作圖表，檢查結果是否支撐主張。"],
-      ["Communicate clearly","Turn work into a meeting update, poster, manuscript figure, demo video, or GitHub record.","清楚表達成果","把工作轉成會議更新、海報、論文圖、展示影片或 GitHub 紀錄。"]
+
+    connectH.textContent = tx("From classroom concepts to laboratory judgment","從課堂概念到實驗室判斷");
+    connectP.textContent = tx(
+      "The four courses give students complementary abilities: fabricate devices, understand flow, design chip-based experiments, and communicate engineering ideas clearly.",
+      "這四門課提供互補能力：製作元件、理解流動、設計晶片實驗，並清楚表達工程想法。"
+    );
+    const conn = [
+      ["Fabrication literacy","Understand how a process choice changes device quality.","製程素養","理解製程選擇如何改變元件品質。"],
+      ["Physical intuition","Use fluid mechanics to explain pressure, resistance, mixing, and transport.","物理直覺","用流體力學解釋壓力、阻力、混合與傳輸。"],
+      ["System integration","Connect chips, sensors, samples, and readouts into a usable workflow.","系統整合","把晶片、感測器、樣品與讀出流程整合成可用系統。"],
+      ["Technical communication","Use drawings and CAD to make design ideas inspectable and reproducible.","技術溝通","用圖學與 CAD 讓設計想法可檢查、可重現。"]
     ];
-    ph.innerHTML = cards.map(x => `<article class="story-card"><h3>${tx(x[0],x[2])}</h3><p>${tx(x[1],x[3])}</p></article>`).join("");
-    load("data/teaching.json").then(d => {
-      training.innerHTML = tx(d.graduateTraining,d.graduateTrainingZh).map(x => `<span class="tag">${x}</span>`).join("");
-    });
-    const fitData = [
-      ["Undergraduate researchers","Good for students who want first exposure to device building, experiments, and figures.","大學生專題生","適合第一次接觸裝置製作、實驗與圖表整理的學生。"],
-      ["Graduate students","Good for students ready to own a research question and turn it into publishable evidence.","研究生","適合準備承擔研究問題，並把成果累積到可發表證據的學生。"],
-      ["Exchange students","Good for short or medium stays with a focused build-measure-report plan.","交換生","適合以明確的製作、量測與報告計畫完成短中期研究。"],
-      ["International students","Good for students who want cross-cultural teamwork around engineering for biomedical and biological systems.","國際學生","適合想在跨文化團隊中投入生醫與生物系統工程的學生。"]
-    ];
-    fit.innerHTML = fitData.map(x => `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`).join("");
+    connections.innerHTML = conn.map(x => `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`).join("");
   </script>
 </body>
 </html>
