@@ -48,6 +48,15 @@
 
     <section class="section soft">
       <div class="container">
+        <p class="kicker">RESEARCH AND TEACHING STANCE</p>
+        <h2 id="stanceTitle"></h2>
+        <p class="intro" id="stanceLead"></p>
+        <div class="join-points" id="stancePoints"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
         <p class="kicker">RESEARCH FOR BETTER LIFE</p>
         <h2 id="valueTitle"></h2>
         <p class="intro" id="valueLead"></p>
@@ -55,7 +64,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section soft">
       <div class="container">
         <p class="kicker">APPLICATION ROUTES</p>
         <h2 id="appTitle"></h2>
@@ -64,7 +73,7 @@
       </div>
     </section>
 
-    <section class="section soft">
+    <section class="section">
       <div class="container">
         <p class="kicker">JOIN THE TEAM</p>
         <h2 id="joinTitle"></h2>
@@ -73,7 +82,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section soft">
       <div class="container">
         <p class="kicker">SELECTED PUBLICATIONS</p>
         <h2 id="pubTitle"></h2>
@@ -89,19 +98,19 @@
   <script>
     initShell();
     title.textContent = v6Text(
-      "Engineering devices that measure life, support care, and improve practice",
-      "用工程裝置量測生命、支援照護、改善實作"
+      "Research and teaching built around useful engineering evidence",
+      "以有用的工程證據建立研究與教學"
     );
     lead.textContent = v6Text(
-      "Our lab uses mechanical engineering, mechatronics, biomedical engineering, and data science to build devices for sensing, sample preparation, rehabilitation, animal health, and bio-industry workflows.",
-      "實驗室以機械、機電、生醫工程與數據科學為基礎，製作可用於感測、樣品前處理、復健、動物健康與生物產業流程的裝置。"
+      "The lab uses research results and student training to show a consistent attitude: define a real problem, build a device, measure carefully, and keep improving until the evidence is strong enough to share.",
+      "實驗室透過研究成果與學生訓練，呈現一種持續的態度：定義真實問題、做出裝置、仔細量測，並反覆修正到證據足以被分享。"
     );
     researchBtn.textContent = v6Text("Research topics","研究題目");
     intlBtn.textContent = v6Text("International collaboration","國際合作與學生");
     collabBtn.textContent = v6Text("Industry collaboration","產學合作");
     statement.textContent = v6Text(
-      "We ask practical questions, build testable devices, collect evidence carefully, and improve the system when the data shows a weakness.",
-      "我們從實際問題出發，做出可以測試的裝置，仔細取得證據；當數據指出弱點，就回到設計與實驗流程繼續修正。"
+      "We welcome Taiwan students, international students, graduate students, undergraduates, and exchange students who want to learn by building systems and explaining evidence.",
+      "我們歡迎台灣學生、國際學生、研究生、大學生與交換生，透過親手建立系統與說清楚證據來學習。"
     );
 
     coverPill.textContent = v6Text("Lab on a Chip 2024 · Cover feature","Lab on a Chip 2024 · 封面特色");
@@ -127,6 +136,28 @@
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
     ).join("");
     coverLink.textContent = v6Text("Read the acoustofluidics story →","閱讀聲流體研究故事 →");
+
+    stanceTitle.textContent = v6Text(
+      "A lab for students who want research to become something testable",
+      "給想把研究變成可測試成果的學生"
+    );
+    stanceLead.textContent = v6Text(
+      "The website should show not only what we study, but why we keep working on it: students learn from research that has constraints, measurements, failure, revision, and publication-quality evidence.",
+      "這個網站不只展示我們做什麼，也要說明為什麼持續投入：學生會從有條件限制、有量測、有失敗、有修正、並能累積到發表品質證據的研究中學習。"
+    );
+    const stance = [
+      ["Research persistence","Use real bottlenecks to drive device design, experiments, and data analysis."],
+      ["Teaching persistence","Train students to read, build, measure, make figures, write, and explain their own result."],
+      ["Collaboration target","Seek partners who can help a technology face a real validation path, not only a demonstration."]
+    ];
+    const stanceZh = [
+      ["研究上的執著","用真實瓶頸推動裝置設計、實驗與資料分析。"],
+      ["教學上的執著","訓練學生閱讀、製作、量測、作圖、寫作，並說清楚自己的成果。"],
+      ["合作的目標","尋找能讓技術面對真實驗證路徑的夥伴，而不只是展示。"]
+    ];
+    stancePoints.innerHTML = (state.lang === "zh" ? stanceZh : stance).map(x =>
+      `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
+    ).join("");
 
     valueTitle.textContent = v6Text("Research topics connected to measurement, care, and production","研究題目連到量測、照護與生產流程");
     valueLead.textContent = v6Text(
@@ -155,8 +186,8 @@
     ).join("");
     joinTitle.textContent = v6Text("Students who want to connect engineering with life systems are welcome","歡迎想把工程連到生命系統的同學加入");
     joinLead.textContent = v6Text(
-      "The team is a good fit for students interested in mechanical engineering, mechatronics, biomedical engineering, data science, and hands-on device development.",
-      "如果你對機械、機電、生醫工程、數據科學與動手製作裝置有興趣，這裡會有適合你練習與成長的題目。"
+      "The team is a good fit for Taiwan and international students who are interested in mechanical engineering, mechatronics, biomedical engineering, data science, and hands-on device development.",
+      "如果你是台灣或國際學生，對機械、機電、生醫工程、數據科學與動手製作裝置有興趣，這裡會有適合你練習與成長的題目。"
     );
     const joinItems = [
       ["Mechanical / mechatronics","Design mechanisms, fixtures, microfluidic structures, sensors, and test platforms."],

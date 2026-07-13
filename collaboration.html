@@ -13,7 +13,7 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="kicker">INTERNATIONAL COLLABORATION</p>
+        <p class="kicker">COLLABORATION</p>
         <h1 id="title"></h1>
         <p id="lead"></p>
       </div>
@@ -50,12 +50,19 @@
   <script src="app.js"></script>
   <script>
     initShell();
-    title.textContent = tx("Collaboration that brings people, questions, and systems together","讓人、問題與系統相遇的合作");
-    lead.textContent = tx("International students and visiting scholars are not guests at the edge of the lab; they contribute to prototypes, experiments, data, and the shared learning culture.","國際學生與訪問學者不是實驗室邊緣的訪客；他們參與原型、實驗、資料與共同學習的文化。");
-    mapTitle.textContent = tx("A lab with an international learning culture","具有國際學習文化的實驗室");
-    mapText.textContent = tx("From short visits to multi-month research stays, we host students and colleagues who learn through safety training, hands-on work, weekly discussion, and shared responsibility for a real research question.","從短期參訪到數個月的研究駐點，我們以安全訓練、實作、定期討論與共同負責真實研究問題，接待每一位國際學生與夥伴。");
-    const a = [["Academic collaboration","學術合作"],["Clinical collaboration","臨床合作"],["Industry partnership","產學合作"],["International programs","國際計畫"],["Strategic research","策略研究"],["Technology translation","技術轉譯"]];
-    cards.innerHTML = a.map(x => `<article class="story-card"><h3>${tx(x[0],x[1])}</h3><p>${tx("Focused work built on complementary expertise, practical validation, and a shared commitment to learning.","以互補專長、實際驗證與共同學習為核心的聚焦合作。")}</p></article>`).join("");
+    title.textContent = tx("Collaboration for technical breakthroughs and student growth","為技術突破與學生培育而合作");
+    lead.textContent = tx("We seek collaborations where a real problem can sharpen the research, open a validation route, and give Taiwan and international students a chance to build useful evidence.","我們尋找能讓真實問題推進研究、開啟驗證路徑，並讓台灣與國際學生建立有用證據的合作。");
+    mapTitle.textContent = tx("International routes for students and research questions","連結學生與研究問題的國際路徑");
+    mapText.textContent = tx("From short visits to multi-month research stays, students and colleagues join projects through safety training, hands-on work, weekly discussion, and shared responsibility for a real research question.","從短期參訪到數個月的研究駐點，學生與夥伴透過安全訓練、實作、定期討論與共同負責真實研究問題，加入專題。");
+    const a = [
+      ["Academic collaboration","學術合作","Joint questions, visiting students, shared methods, and co-developed evidence.","共同問題、訪問學生、共享方法與一起建立的證據。"],
+      ["Clinical collaboration","臨床合作","Patient-facing constraints help sensing systems move from signal quality to useful decisions.","臨床限制協助感測系統從訊號品質走向有用決策。"],
+      ["Industry partnership","產學合作","Manufacturing, workflow, reliability, and validation define whether a device can leave the lab.","製程、流程、可靠度與驗證，決定裝置能否走出實驗室。"],
+      ["International programs","國際計畫","Exchange students and visiting researchers add culture, methods, and new ways to ask questions.","交換生與訪問研究者帶來文化、方法與新的提問方式。"],
+      ["Strategic research","策略研究","We look for problems where mechanical, mechatronic, biomedical, and data-science tools can meet.","我們尋找機械、機電、生醫與數據科學工具能交會的問題。"],
+      ["Technology translation","技術轉譯","A breakthrough matters when evidence, users, and implementation conditions can be brought together.","當證據、使用者與實作條件能被放在一起時，技術突破才有意義。"]
+    ];
+    cards.innerHTML = a.map(x => `<article class="story-card"><h3>${tx(x[0],x[1])}</h3><p>${tx(x[2],x[3])}</p></article>`).join("");
   </script>
 </body>
 </html>
