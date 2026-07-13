@@ -32,6 +32,7 @@
           <h2 id="cultureH"></h2>
           <p class="intro" id="cultureP"></p>
           <a class="text-link" href="team-culture.html" id="cultureLink"></a>
+          <a class="text-link secondary-link" href="honors.html" id="honorsLink"></a>
         </div>
         <img src="assets/team/labgroup-2023.jpg" alt="Yen-Wen Lu Lab team">
       </div>
@@ -53,6 +54,7 @@
       "實驗室重視好奇心、互相支持、嚴謹證據，以及能回應產業、學術與社會需求的自我成長。"
     );
     cultureLink.textContent = tx("Read team culture and alumni outcomes →","閱讀團隊文化與校友成果 →");
+    honorsLink.textContent = tx("View honors and milestones →","查看榮譽榜 →");
     load("data/people.json").then(d => grid.innerHTML = d.map(personCard).join(""));
   </script>
 </body>

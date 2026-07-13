@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Honors | Yen-Wen Lu Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v6.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">HONORS</p>
+        <h1 id="title"></h1>
+        <p id="lead"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container honor-quote">
+        <p id="quote"></p>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">LAB RESEARCH RECOGNITION</p>
+        <h2 id="labH"></h2>
+        <div class="honor-timeline" id="labHonors"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker">ACADEMIC HONORS</p>
+        <h2 id="academicH"></h2>
+        <div class="honor-timeline compact" id="academicHonors"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">INTERNATIONAL EXCHANGE</p>
+        <h2 id="exchangeH"></h2>
+        <div class="honor-timeline compact" id="exchangeHonors"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>window.BASE="";</script>
+  <script src="app.js"></script>
+  <script>
+    initShell("people");
+    title.textContent = tx("Honors and Milestones","榮譽榜");
+    lead.textContent = tx(
+      "Selected research recognition, academic honors, and international exchanges from the lab's development.",
+      "整理實驗室發展過程中的代表性研究肯定、學術榮耀與國際交流。"
+    );
+    quote.textContent = tx(
+      "We keep a rigorous scientific attitude and turn creative inspiration into substantive contributions to society.",
+      "堅持嚴謹的科學態度，將創新靈感轉化為實質的社會貢獻。"
+    );
+    labH.textContent = tx("Lab research recognition","實驗室團隊研究榮耀");
+    academicH.textContent = tx("International and domestic academic honors","國際／國內學術榮耀");
+    exchangeH.textContent = tx("International academic exchange","國際交流");
+
+    const lab = [
+      ["Dec. 2025","National Innovation Award recognition for collaborative research with NTU Hospital. Congratulations to Guan-Yu Lin, Yao-De Wang, and Hang-Yen Kung.","2025 年 12 月","實驗室畢業生與台大醫院合作研究成果獲 2025 國家新創獎肯定。恭喜冠宇、耀德、杭彥。"],
+      ["Dec. 2025","Doctoral candidate Yan-Wei Chang and Ms. K. Kuo at MIT published research in Lab on a Chip.","2025 年 12 月","博士候選人張晏瑋與美國 MIT 的 Ms. K. Kuo 研究成果刊登於 Lab on a Chip。"],
+      ["Jun. 2025","Lab research was presented at Biosensors 2025 in Portugal, including two oral presentations and one poster.","2025 年 6 月","實驗室研究成果於葡萄牙 Biosensors 2025 發表，包含兩篇口頭報告與一篇海報。"],
+      ["Feb. 2023","Wan-Ting Yu and Yao-De Wang were selected to present research at Transducers 2023.","2023 年 2 月","研究生萬庭佑、王耀德獲選參加 Transducers 2023 國際會議並發表研究成果。"],
+      ["Jan. 2023","Postdoctoral researcher Rajat published wearable tactile-sensor research in Biosensors.","2023 年 1 月","博士後研究員 Rajat 於 Biosensors 發表高靈敏穿戴型觸覺感測器研究成果。"],
+      ["Mar. 2022","Guan-Yu Lin published work in Sensors and Actuators B: Chemical on optoelectronic online hemodialysis monitoring with machine learning.","2022 年 3 月","研究生林冠宇於 Sensors and Actuators B: Chemical 發表光電整合腎臟透析線上檢測與機器學習預測研究。"],
+      ["Nov. 2021","Yan-Wei Chang presented lab-on-a-chip research for COVID-19 testing at microTAS 2021.","2021 年 11 月","博士候選人張晏瑋開發應用於新冠病毒檢測的生物實驗室晶片，於 microTAS 2021 發表。"],
+      ["Oct. 2020","Heng-Yu Shen received Best Paper recognition at ICSS 2020.","2020 年 10 月","研究生沈恆榆於 ICSS 2020 國際智慧感測器研討會獲最佳論文肯定。"],
+      ["Nov. 2019","Heng-Yu Shen presented soft-robotics research at microTAS 2019.","2019 年 11 月","研究生沈恆榆軟性機器人研究成果於 microTAS 2019 發表。"],
+      ["Nov. 2019","The lab received the poster excellence award in the Mechanical, Electrical, and Energy field for an MOST industry-academia collaboration project.","2019 年 11 月","實驗室獲科技部工程司 108 年度產學合作計畫成果機電能源領域海報特優獎，感謝張育、聖儒等同學。"],
+      ["Nov. 2018","Heng-Yu Shen, Ting-Chia Chu, and Ding-Chang Weng reached the microTAS 2018 Shark Tank final with Smart Patch.","2018 年 11 月","沈恆榆、朱庭加與翁鼎璋入圍 microTAS 2018 創業 Shark Tank 決賽，題目為 Smart Patch。"],
+      ["Nov. 2018","Pei-Hsuan Wang presented biomimetic adhesive research for drug delivery at microTAS 2018.","2018 年 11 月","王姵璇於 microTAS 2018 發表仿生 PDMS-Gum Arabic hybrid biopolymer adhesive for drug delivery 研究。"],
+      ["Jan. 2017","Yu-Ting Lai presented automated paper-based devices with microfluidic timing valves for competitive ELISA at IEEE MEMS 2017.","2017 年 1 月","賴昱廷於 IEEE MEMS 2017 發表 Automated Paper-Based Devices by Microfluidic Timing-Valve for Competitive ELISA。"]
+    ];
+    const academic = [
+      ["Dec. 2021","Prof. Yen-Wen Lu was elected Fellow of the Royal Society of Chemistry.","2021 年 12 月","盧彥文教授榮獲英國皇家化學協會 Fellow 院士。"],
+      ["Sep. 2018","Prof. Lu presented lab-on-a-chip research at the RSC Tokyo International Conference and received Best Poster Award recognition.","2018 年 9 月","盧教授於 RSC Tokyo International Conference 發表生物實驗室晶片研究成果，並獲 Best Poster Award。"],
+      ["Apr. 2017","Prof. Lu presented wearable mobile pulse-sensing research for IoT applications at IEEE NEMS 2017.","2017 年 4 月","盧教授於 IEEE NEMS 2017 發表可穿戴式行動脈搏感測器於物聯網應用之研究。"]
+    ];
+    const exchange = [
+      ["Oct. 2022","Prof. Jeff Wang from Johns Hopkins University visited the lab for academic exchange.","2022 年 10 月","美國 Johns Hopkins University 生醫工程系 Prof. Jeff Wang 拜訪實驗室並進行學術交流。"],
+      ["Aug. 2022","Prof. Wibool Piyawattanametha from King Mongkut's Institute of Technology Ladkrabang visited the lab.","2022 年 8 月","泰國 King Mongkut's Institute of Technology Ladkrabang 生醫工程系 Prof. Wibool Piyawattanametha 拜訪實驗室。"],
+      ["Dec. 2021","Prof. Lu visited an artificial intelligence laboratory at The University of Texas at Austin.","2021 年 12 月","盧教授拜訪美國德州大學奧斯汀分校人工智慧實驗室。"],
+      ["Nov. 2016","Prof. Yang, Chair of Computer Engineering at Rochester Institute of Technology, visited the lab.","2016 年 11 月","美國 Rochester Institute of Technology 電腦工程系系主任 Prof. Yang 拜訪實驗室。"],
+      ["Nov. 2016","Prof. Han from Texas A&M University Electrical Engineering visited the lab for academic exchange.","2016 年 11 月","美國 Texas A&M University 電機工程系 Prof. Han 拜訪實驗室並進行學術交流。"]
+    ];
+    function render(items){
+      return items.map(x => `<article><time>${tx(x[0],x[2])}</time><p>${tx(x[1],x[3])}</p></article>`).join("");
+    }
+    labHonors.innerHTML = render(lab);
+    academicHonors.innerHTML = render(academic);
+    exchangeHonors.innerHTML = render(exchange);
+  </script>
+</body>
+</html>

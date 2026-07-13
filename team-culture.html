@@ -57,6 +57,7 @@
         <p class="kicker">SELECTED OUTCOMES</p>
         <h2 id="outcomeH"></h2>
         <div class="team-timeline" id="outcomes"></div>
+        <a class="text-link" href="honors.html" id="honorLink"></a>
       </div>
     </section>
   </main>
@@ -121,6 +122,7 @@
       ["International pathways","Alumni have continued toward institutions and companies in Taiwan, North America, and global technology industries.","國際路徑","校友後續發展連結台灣、北美與全球科技產業。"]
     ];
     outcomes.innerHTML = outcomeItems.map(x => `<article><strong>${tx(x[0],x[2])}</strong><p>${tx(x[1],x[3])}</p></article>`).join("");
+    honorLink.textContent = tx("View the full honors timeline →","查看完整榮譽榜 →");
   </script>
 </body>
 </html>
