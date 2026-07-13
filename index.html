@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Yen-Wen Lu Lab</title>
+  <title>Yen-Wen Lu Lab V7 | Engineering for Better Life</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="v6.css">
@@ -24,9 +24,18 @@
       </div>
     </section>
 
-    <section class="v6-band">
+    <section class="v6-band v7-statement">
       <div class="container">
         <p id="statement"></p>
+      </div>
+    </section>
+
+    <section class="section v7-routes-section">
+      <div class="container">
+        <p class="kicker">START HERE</p>
+        <h2 id="routeTitle"></h2>
+        <p class="intro" id="routeLead"></p>
+        <div class="v7-route-grid" id="routeGrid"></div>
       </div>
     </section>
 
@@ -48,7 +57,7 @@
 
     <section class="section soft">
       <div class="container">
-        <p class="kicker">RESEARCH AND TEACHING STANCE</p>
+        <p class="kicker">PROFESSOR BRAND</p>
         <h2 id="stanceTitle"></h2>
         <p class="intro" id="stanceLead"></p>
         <div class="join-points" id="stancePoints"></div>
@@ -98,20 +107,36 @@
   <script>
     initShell();
     title.textContent = v6Text(
-      "Research and teaching built around useful engineering evidence",
-      "以有用的工程證據建立研究與教學"
+      "Engineering small systems for better life",
+      "以小型工程系統，連結更好的生活"
     );
     lead.textContent = v6Text(
-      "The lab uses research results and student training to show a consistent attitude: define a real problem, build a device, measure carefully, and keep improving until the evidence is strong enough to share.",
-      "實驗室透過研究成果與學生訓練，呈現一種持續的態度：定義真實問題、做出裝置、仔細量測，並反覆修正到證據足以被分享。"
+      "We build microfluidic, wearable, sensing, and intelligent mechatronic systems for biomedical care, rehabilitation, sports science, breeding, animal medicine, and bio-industry. The same belief connects research and teaching: a good idea must become a device, a measurement, and evidence that others can trust.",
+      "我們發展微流體、穿戴式感測、智慧機電與資料分析系統，面向生物醫學、復健、運動科學、育種、動物醫學與生物產業。研究與教學背後的信念一致：好的想法必須走向裝置、量測，以及能被他人信任的證據。"
     );
     researchBtn.textContent = v6Text("Research topics","研究題目");
     intlBtn.textContent = v6Text("International collaboration","國際合作與學生");
     collabBtn.textContent = v6Text("Industry collaboration","產學合作");
     statement.textContent = v6Text(
-      "We welcome Taiwan students, international students, graduate students, undergraduates, and exchange students who want to learn by building systems and explaining evidence.",
-      "我們歡迎台灣學生、國際學生、研究生、大學生與交換生，透過親手建立系統與說清楚證據來學習。"
+      "V7 focuses the website around three promises: clear research topics, a visible training path for Taiwan and international students, and collaboration opportunities where engineering can move from a laboratory prototype toward real validation.",
+      "V7 將網站聚焦在三個承諾：清楚呈現研究題目、讓台灣與國際學生看見訓練路徑，並讓產學合作夥伴理解技術如何從實驗室原型走向真實驗證。"
     );
+
+    routeTitle.textContent = v6Text("Choose the path that matches why you are here","依照你的目的，快速進入網站");
+    routeLead.textContent = v6Text(
+      "The homepage is written for several readers at once: prospective students, current collaborators, industry partners, and international visitors.",
+      "首頁同時服務幾種讀者：想加入的學生、既有合作夥伴、產業夥伴與國際訪客。"
+    );
+    const routes = [
+      ["Research Topics","For readers who want to understand microfluidics, sensing, AI hemodialysis, soft robotics, and thermal-fluid systems.","research.html","研究題目","理解微流體、感測、AI 透析、軟機器人與熱流系統等研究。"],
+      ["International Collaboration & Students","For Taiwan students, international students, exchange students, and global partners who want to see the lab culture and training path.","international.html","國際合作與學生","給台灣學生、國際學生、交換生與國際夥伴，看見實驗室文化與訓練路徑。"],
+      ["Industry Collaboration","For hospitals, companies, and technical partners interested in validation, prototypes, sensing systems, and translational projects.","collaboration.html","產學合作","給醫院、公司與技術夥伴，了解驗證、原型、感測系統與轉譯合作。"]
+    ];
+    routeGrid.innerHTML = routes.map(x => `
+      <a class="v7-route-card" href="${x[2]}">
+        <span>${v6Text(x[0],x[3])}</span>
+        <p>${v6Text(x[1],x[4])}</p>
+      </a>`).join("");
 
     coverPill.textContent = v6Text("Lab on a Chip 2024 · Cover feature","Lab on a Chip 2024 · 封面特色");
     coverTitle.textContent = v6Text(
@@ -138,12 +163,12 @@
     coverLink.textContent = v6Text("Read the acoustofluidics story →","閱讀聲流體研究故事 →");
 
     stanceTitle.textContent = v6Text(
-      "A lab for students who want research to become something testable",
-      "給想把研究變成可測試成果的學生"
+      "Persistence in research, care in teaching, and honesty in evidence",
+      "研究的執著、教學的細緻，以及對證據的誠實"
     );
     stanceLead.textContent = v6Text(
-      "The website should show not only what we study, but why we keep working on it: students learn from research that has constraints, measurements, failure, revision, and publication-quality evidence.",
-      "這個網站不只展示我們做什麼，也要說明為什麼持續投入：學生會從有條件限制、有量測、有失敗、有修正、並能累積到發表品質證據的研究中學習。"
+      "The lab is built around topics that matter beyond one paper: devices for health, biological analysis, intelligent monitoring, and energy-related reliability. Students learn the attitude behind those results: do the experiment, face the data, revise the system, and explain it clearly.",
+      "實驗室的題目不只為了一篇論文，而是面向健康、生命分析、智慧監測與能源可靠度等長期問題。學生在這些題目中學到成果背後的態度：做實驗、面對數據、修正系統，並把它說清楚。"
     );
     const stance = [
       ["Research persistence","Use real bottlenecks to drive device design, experiments, and data analysis."],
