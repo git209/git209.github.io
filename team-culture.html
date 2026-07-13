@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team Culture | Yen-Wen Lu Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v6.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">TEAM CULTURE</p>
+        <h1 id="title"></h1>
+        <p id="lead"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container team-manifesto">
+        <p id="manifesto"></p>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">PROFESSOR</p>
+        <h2 id="profH"></h2>
+        <p class="intro" id="profP"></p>
+        <div class="application-grid" id="profCards"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker">RESEARCHERS</p>
+        <h2 id="researcherH"></h2>
+        <p class="intro" id="researcherP"></p>
+        <div class="join-points" id="researcherCards"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">STUDENTS & ALUMNI</p>
+        <h2 id="studentH"></h2>
+        <p class="intro" id="studentP"></p>
+        <div class="team-achievement-grid" id="studentCards"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker">SELECTED OUTCOMES</p>
+        <h2 id="outcomeH"></h2>
+        <div class="team-timeline" id="outcomes"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>window.BASE="";</script>
+  <script src="app.js"></script>
+  <script>
+    initShell("people");
+    title.textContent = tx("A team that grows through joy, discipline, and evidence","在快樂、嚴謹與證據中成長的研究團隊");
+    lead.textContent = tx(
+      "The lab combines a supportive atmosphere with careful scientific standards, so students and researchers can grow while building useful engineering technology.",
+      "實驗室結合互相支持的氛圍與嚴謹的科學標準，讓學生與研究人員在成長中發展有用的工程技術。"
+    );
+    manifesto.textContent = tx(
+      "A relaxed and joyful atmosphere can open larger inspiration; a rigorous attitude helps us pursue scientific truth. We keep growing so that the research energy developed in the lab can support industry needs, advance engineering technology, and contribute back to society.",
+      "以輕鬆快樂的氛圍，激發更大的靈感；以嚴謹的態度，追求科學真相。我們不斷追求自我成長，讓實驗室累積的研究能量能協助產業需求、發展新的工程技術，並回饋社會。"
+    );
+
+    profH.textContent = tx("Prof. Yen-Wen Lu: international experience, NTU commitment","盧彥文教授：國際歷練，深耕臺大");
+    profP.textContent = tx(
+      "Prof. Lu previously served on the faculty at Rutgers University before returning to National Taiwan University, his alma mater, to teach and build an interdisciplinary research team in biomechatronics.",
+      "盧教授曾於美國 Rutgers University 任教，後返回母校國立臺灣大學生物機電工程學系，投入教學與跨領域研究團隊建置。"
+    );
+    const prof = [
+      ["International research experience","Research support and collaboration experience include agencies and organizations such as NSF, Johnson & Johnson, and ACS.","國際研究歷練","曾獲 NSF、Johnson & Johnson、ACS 等機構支持或合作經驗。"],
+      ["NTU teaching commitment","Returned to NTU to train students who can connect engineering fundamentals with real biomedical and industrial problems.","回饋母校","返回臺大培育能把工程基礎連到生醫與產業問題的學生。"],
+      ["Research core","Robotics, sensors, semiconductor processing, microfluidics, and biomedical mechatronic integration.","研究核心","機器人、感測器、半導體製程、微流體與生醫機電整合。"],
+      ["Academic recognition","International recognitions and professional service support the lab's continued research development.","學術肯定","國際獎項與專業服務經驗支持團隊持續發展。"]
+    ];
+    profCards.innerHTML = prof.map(x => `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`).join("");
+
+    researcherH.textContent = tx("Postdoctoral fellows, researchers, and assistants","研究員、博士後與助理");
+    researcherP.textContent = tx(
+      "Researchers in the lab come from Taiwan and abroad. They bring professional training, engineering knowledge, independent execution, and mentoring support for students.",
+      "實驗室研究員來自國內外，具備專業訓練、工程知識、獨立執行能力，並協助學生完成實驗與研究任務。"
+    );
+    const researchers = [
+      ["Independent execution","Carry out project-related tasks, system integration, experiments, and analysis.","獨立執行","能執行計畫任務、系統整合、實驗與分析。"],
+      ["Team support","Help younger members troubleshoot, document, and improve experimental workflows.","協助團隊","協助新進成員除錯、記錄與改善實驗流程。"],
+      ["Career development","Strong performance can connect to international universities, research institutes, and technology companies.","職涯發展","優良表現可銜接國際大學、研究機構與科技企業。"]
+    ];
+    researcherCards.innerHTML = researchers.map(x => `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`).join("");
+
+    studentH.textContent = tx("Graduate students and undergraduate researchers","研究生與專題生");
+    studentP.textContent = tx(
+      "Students are trained through rigorous writing, detailed presentations, careful experiments, and frequent interaction with international visitors, industry partners, and alumni.",
+      "學生透過嚴謹寫作、細節簡報、扎實實驗，以及與國際訪客、產業夥伴與校友的互動接受訓練。"
+    );
+    const students = [
+      ["Rigorous academic training","Students learn to make claims only when figures, methods, and data are ready to support them.","嚴謹學術訓練","學生學會在圖表、方法與數據足以支撐時才提出主張。"],
+      ["International and industry exposure","The lab frequently hosts international students, scholars, and industry-linked researchers.","國際與產學接軌","實驗室經常與國際學生、學者及產業在職研究者互動。"],
+      ["Alumni pathways","Alumni have entered technology companies such as TSMC, MediaTek, Micron, Intel, ASRock, ASUS, and graduate programs abroad.","校友發展","校友進入台積電、聯發科、美光、Intel、華擎、華碩等科技企業，或赴海外大學深造。"]
+    ];
+    studentCards.innerHTML = students.map(x => `<article><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></article>`).join("");
+
+    outcomeH.textContent = tx("Selected awards and alumni milestones","代表性獎項與校友成果");
+    const outcomeItems = [
+      ["National Innovation Award","Members including Guan-Yu Lin, Yao-De Wang, and Hang-Yen Kung were recognized through National Innovation Award-related achievements.","國家新創獎","林冠宇、王耀德、龔杭彥等成員曾於國家新創獎相關成果中獲得肯定。"],
+      ["Wan-Ting Yu, 2024","Published a high-quality Lab on a Chip paper during the master's program; the work was selected as a journal cover feature.","萬庭佑，2024","碩士期間發表 Lab on a Chip 高品質論文，並獲選期刊封面特色。"],
+      ["Da-Ren Yang, 2023","Published two high-impact journal papers during the master's program and contributed to cover-level research outputs.","楊達人，2023","碩士期間發表兩篇高品質國際期刊論文，並參與封面等級研究成果。"],
+      ["Yu-Hsiang Cheng and Guan-Yu Lin","Earlier alumni also produced strong journal outcomes and continued into industry or advanced study.","鄭宇翔與林冠宇","早期校友也產出高品質期刊成果，並延續至產業或進修發展。"],
+      ["International pathways","Alumni have continued toward institutions and companies in Taiwan, North America, and global technology industries.","國際路徑","校友後續發展連結台灣、北美與全球科技產業。"]
+    ];
+    outcomes.innerHTML = outcomeItems.map(x => `<article><strong>${tx(x[0],x[2])}</strong><p>${tx(x[1],x[3])}</p></article>`).join("");
+  </script>
+</body>
+</html>

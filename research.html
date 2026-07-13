@@ -1,1 +1,154 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Yen-Wen Lu</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="map.css"></head><body><div id="header"></div><main><section class="page-hero"><div class="container"><p class="kicker">RESEARCH</p><h1 id="title"></h1><p id="lead"></p></div></section><section class="section"><div class="container"><p class="kicker">HOW THE SIX DIRECTIONS CONNECT</p><h2 id="mapTitle"></h2><p class="intro" id="mapText"></p><img class="technology-map" src="assets/brand/technology-map.svg" alt="Technology map connecting research directions"></div></section><section class="section soft"><div class="container"><p class="kicker">SIX CONNECTED DIRECTIONS</p><h2 id="flowTitle"></h2><p class="intro" id="flowText"></p><div class="research-flow six-flow"><span>Digital microfluidics</span><span>Acoustofluidics</span><span>Wearables</span><span>AI healthcare</span><span>Soft robotics</span><span>Exosome engineering</span></div><div id="list" class="grid research-grid"></div></div></section></main><div id="footer"></div><script>window.BASE="";</script><script src="app.js"></script><script>initShell();const z=state.lang==="zh",t=(en,cn)=>z?cn:en;title.textContent=t("Six research directions, one purpose: better lives through better decisions","六大研究主軸，一個共同目的：用更好的決策改善人類生活");lead.textContent=t("We build novel devices that collect useful data effectively, then turn that evidence into analysis and decisions that can improve human life.","我們發展新穎元件以有效取得有用資料，再將證據轉為分析與決策，進而改善人類生活。");mapTitle.textContent=t("From basic science to useful decisions","從基礎科學走向有用決策");mapText.textContent=t("The six directions share one development logic: understand a physical mechanism, make a novel device, collect useful data reliably, analyse the evidence, and create a path toward better health and everyday life.","六大方向共享一條發展邏輯：理解物理機制、做出新穎元件、可靠地取得有用資料、分析證據，並走向改善健康與日常生活的應用。");flowTitle.textContent=t("Different technologies, a shared contribution","不同技術，共同貢獻");flowText.textContent=t("Digital microfluidics and acoustofluidics control samples; exosome engineering develops a distinct biological preparation route; wearable sensors capture life outside the laboratory; AI helps interpret complex signals; and soft robotics brings sensing into safe physical action.","數位微流體與聲流體控制樣品；外泌體工程發展獨立的生物製備路徑；穿戴式感測捕捉實驗室外的生活訊號；AI 協助解讀複雜資料；軟性機器人則把感測帶入安全的實體行動。");load("data/research.json").then(d=>list.innerHTML=d.map(researchCard).join(""));</script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Research | Yen-Wen Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="v6.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">RESEARCH</p>
+        <h1 id="title"></h1>
+        <p id="lead"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container research-taxonomy">
+        <div>
+          <p class="kicker">RESEARCH CLASSIFICATION</p>
+          <h2 id="classH"></h2>
+          <p class="intro" id="classP"></p>
+          <div class="taxonomy-list" id="taxonomy"></div>
+        </div>
+        <img src="assets/uploads/research-category-sketch.png" alt="Teaching and research classification sketch">
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">MECHANICAL SYSTEMS FROM THE EARLY LAB SITE</p>
+        <h2 id="mechanicalH"></h2>
+        <p class="intro" id="mechanicalP"></p>
+        <div class="application-grid" id="mechanicalItems"></div>
+        <div class="mechanical-video-grid" id="mechanicalVideos"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container ai-medtech">
+        <div>
+          <p class="kicker">AI & INNOVATIVE MEDICAL DEVICES</p>
+          <h2 id="aiH"></h2>
+          <p class="intro" id="aiP"></p>
+        </div>
+        <div class="ai-video-card">
+          <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/CWvfrA86jak" title="Wearable devices and AI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <b id="aiVideoTitle"></b>
+        </div>
+      </div>
+      <div class="container">
+        <div class="research-application-list" id="aiItems"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker">HOW THE DIRECTIONS CONNECT</p>
+        <h2 id="mapTitle"></h2>
+        <p class="intro" id="mapText"></p>
+        <img class="technology-map" src="assets/brand/technology-map.svg" alt="Technology map connecting research directions">
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">CONNECTED DIRECTIONS</p>
+        <h2 id="flowTitle"></h2>
+        <p class="intro" id="flowText"></p>
+        <div class="research-flow six-flow">
+          <span>Digital microfluidics</span><span>Acoustofluidics</span><span>Wearables</span><span>AI healthcare</span><span>Soft robotics</span><span>Exosome engineering</span>
+        </div>
+        <div id="list" class="grid research-grid"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>window.BASE="";</script>
+  <script src="app.js"></script>
+  <script>
+    initShell();
+    const z=state.lang==="zh",t=(en,cn)=>z?cn:en;
+    title.textContent=t("Research directions from mechanisms to useful systems","從機制到有用系統的研究方向");
+    lead.textContent=t(
+      "The lab classifies research by the engineering ability it builds: mechanical systems, mechatronic integration, artificial intelligence, biological processes, and bioinspired technology.",
+      "實驗室依照研究所建立的工程能力進行分類：機械系統、機電整合、人工智慧、生物程序與仿生科技。"
+    );
+    classH.textContent=t("A simple map for teaching and research","教學與研究的簡單分類圖");
+    classP.textContent=t(
+      "The categories help visitors read the lab more easily: some projects begin with fluidic or mechanical systems, some integrate sensors and actuation, some rely on AI interpretation, and some focus on biological workflows or bioinspired design.",
+      "這些分類幫助讀者更容易理解實驗室：有些題目從流體或機械系統出發，有些整合感測與驅動，有些依賴 AI 判讀，有些聚焦生物流程或仿生設計。"
+    );
+    const cats=[
+      ["Mechanical systems","Droplets, filtration, flow control, thermal-fluid design.","機械系統","液滴、過濾、流體控制與熱流設計。"],
+      ["Mechatronic integration","Sensors, actuators, microfabrication, and system prototypes.","機電整合","感測器、致動器、微製程與系統原型。"],
+      ["Artificial intelligence","Signal interpretation, patient-aware prediction, and data workflow.","人工智慧","訊號判讀、個人化預測與資料流程。"],
+      ["Biological processes","Samples, cells, exosomes, molecular assays, and bio-analysis.","生物程序","樣品、細胞、外泌體、分子檢測與生物分析。"],
+      ["Bioinspired technology","Soft robotics, tactile sensing, and adaptive interaction.","仿生科技","軟性機器人、觸覺感測與適應性互動。"]
+    ];
+    taxonomy.innerHTML=cats.map(x=>`<section><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></section>`).join("");
+
+    mechanicalH.textContent=t("Mechanical systems: early themes that still shape current research","機械系統：延續至今的早期研究主題");
+    mechanicalP.textContent=t(
+      "The earlier lab website grouped several projects under mechanical systems. They remain useful for explaining how the lab moves from physical mechanisms to chip-scale systems.",
+      "早期實驗室網站將多個題目放在機械系統分類下；這些題目仍適合說明實驗室如何從物理機制走向晶片尺度系統。"
+    );
+    const mech=[
+      ["Exosome vortex filtration","A fluidic preparation route for extracellular vesicle handling and enrichment.","外泌體漩渦過濾器","用流體系統處理與富集胞外囊泡的製備路徑。"],
+      ["Electro-controlled digital microfluidics","Programmable droplet motion for sample preparation and molecular workflows.","電控數位微流體","用可程式化液滴操作支援樣品前處理與分子檢測流程。"],
+      ["Liquid-driven optical elements","Thermocapillary and fluidic effects used to tune optical behavior.","液體驅動光學元件","利用熱毛細與流體效應調控光學行為。"],
+      ["LEGO for nanotechnology education","Physical models and hands-on demonstrations that help students understand nanoscale tools.","樂高與奈米科技教育","用實體模型與動手展示協助學生理解奈米尺度工具。"]
+    ];
+    mechanicalItems.innerHTML=mech.map(x=>`<section><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></section>`).join("");
+    const mechVideos=[
+      ["972roQFlIqo","Exosome microfluidics","外泌體微流體"],
+      ["4xJ3vyuzWd0","TENG-powered digital microfluidics","TENG 自供電數位微流體"],
+      ["1okl0gkwwUw","LEGO atomic force microscope","樂高原子力顯微鏡"],
+      ["zE-CWq-Wl2g","Digital microfluidic optical switch","數位微流體光學開關"]
+    ];
+    mechanicalVideos.innerHTML=mechVideos.map(v=>`<article class="mechanical-video"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${v[0]}" title="${t(v[1],v[2])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><b>${t(v[1],v[2])}</b></article>`).join("");
+
+    aiH.textContent=t("AI as a bridge from sensing to prediction and process control","AI 作為感測、預測與製程控制之間的橋樑");
+    aiP.textContent=t(
+      "A recurring goal is to move from passive data collection after symptoms or failures occur toward timely sensing, reliable data, and machine-learning-assisted interpretation.",
+      "我們希望從症狀或問題發生後才被動收集資料，逐步走向即時感測、可靠資料與機器學習輔助判讀。"
+    );
+    aiVideoTitle.textContent=t("Wearable devices and AI","穿戴裝置與 AI 的結合");
+    const aiApps=[
+      ["Clinical real-time testing and prognosis","Innovative medical devices can combine convenient point-of-care sensing, reliable clinical datasets, and machine learning to support precision-medicine research and future decision support.","臨床即時檢測與預後的數位醫療系統","創新醫材可結合便利的即時檢測設備、可靠臨床資料與機器學習，支援精準醫療研究與未來決策輔助。"],
+      ["Smart process monitoring for green factories","Sensors, IoT, data analytics, and AI can monitor manufacturing processes, predict abnormalities, improve yield, and support energy-saving operation.","綠色工廠智慧製程監控","感測器、物聯網、資料分析與 AI 可監控制程、預測異常、提升良率，並支援節能與減排。"],
+      ["Breeding and SNP-based screening","Lab-on-a-chip systems can integrate cell lysis, amplification, melting-temperature analysis, and genetic-variant detection for future high-throughput animal-breeding applications.","經濟動物育種與 SNP 檢測","生物實驗室晶片可整合細胞溶解、核酸擴增、解鍊溫度分析與基因變異檢測，未來可支援高通量育種與品種改良。"]
+    ];
+    aiItems.innerHTML=aiApps.map(x=>`<article><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></article>`).join("");
+
+    mapTitle.textContent=t("From basic science to useful decisions","從基礎科學走向有用決策");
+    mapText.textContent=t(
+      "The directions share one development logic: understand a physical mechanism, make a novel device, collect useful data reliably, analyse the evidence, and create a path toward better health and everyday life.",
+      "各研究方向共享一條發展邏輯：理解物理機制、做出新穎元件、可靠地取得有用資料、分析證據，並走向改善健康與日常生活的應用。"
+    );
+    flowTitle.textContent=t("Different technologies, a shared contribution","不同技術，共同貢獻");
+    flowText.textContent=t(
+      "Digital microfluidics and acoustofluidics control samples; exosome engineering develops a distinct biological preparation route; wearable sensors capture life outside the laboratory; AI helps interpret complex signals; and soft robotics brings sensing into safe physical action.",
+      "數位微流體與聲流體控制樣品；外泌體工程發展獨立的生物製備路徑；穿戴式感測捕捉實驗室外的生活訊號；AI 協助解讀複雜資料；軟性機器人則把感測帶入安全的實體行動。"
+    );
+    load("data/research.json").then(d=>list.innerHTML=d.map(researchCard).join(""));
+  </script>
+</body>
+</html>

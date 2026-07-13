@@ -1,1 +1,59 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>People | Yen-Wen Lu</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><div id="header"></div><main><section class="page-hero"><div class="container"><p class="kicker">PEOPLE</p><h1 id="title"></h1><p id="lead"></p></div></section><section class="section"><div class="container"><div id="grid" class="grid research-grid"></div></div></section></main><div id="footer"></div><script>window.BASE="";</script><script src="app.js"></script><script>initShell("people");title.textContent=tx("People who connect disciplines, ideas, and impact","連結跨領域、想法與影響力的團隊");lead.textContent=tx("Students, researchers, alumni, and collaborators with different skills and a shared commitment to meaningful engineering.","具不同專長的學生、研究人員、校友與合作夥伴，共同投入有意義的工程研究。");load("data/people.json").then(d=>grid.innerHTML=d.map(personCard).join(""));</script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>People | Yen-Wen Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v6.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">PEOPLE</p>
+        <h1 id="title"></h1>
+        <p id="lead"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="grid" class="grid research-grid"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container people-culture">
+        <div>
+          <p class="kicker">TEAM CULTURE</p>
+          <h2 id="cultureH"></h2>
+          <p class="intro" id="cultureP"></p>
+          <a class="text-link" href="team-culture.html" id="cultureLink"></a>
+        </div>
+        <img src="assets/team/labgroup-2023.jpg" alt="Yen-Wen Lu Lab team">
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>window.BASE="";</script>
+  <script src="app.js"></script>
+  <script>
+    initShell("people");
+    title.textContent = tx("People who connect disciplines, ideas, and impact","連結跨領域、想法與影響力的團隊");
+    lead.textContent = tx(
+      "Students, researchers, alumni, and collaborators with different skills and a shared commitment to meaningful engineering.",
+      "具不同專長的學生、研究人員、校友與合作夥伴，共同投入有意義的工程研究。"
+    );
+    cultureH.textContent = tx("A relaxed atmosphere with rigorous standards","輕鬆快樂的氛圍，嚴謹求真的態度");
+    cultureP.textContent = tx(
+      "The lab values curiosity, mutual support, disciplined evidence, and growth that can contribute to industry, academia, and society.",
+      "實驗室重視好奇心、互相支持、嚴謹證據，以及能回應產業、學術與社會需求的自我成長。"
+    );
+    cultureLink.textContent = tx("Read team culture and alumni outcomes →","閱讀團隊文化與校友成果 →");
+    load("data/people.json").then(d => grid.innerHTML = d.map(personCard).join(""));
+  </script>
+</body>
+</html>

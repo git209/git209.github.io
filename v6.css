@@ -33,3 +33,47 @@
 .v6-system:hover{transform:translateY(-3px);box-shadow:0 24px 60px rgba(8,34,61,.14)}
 .v6-feature{border-radius:14px;box-shadow:0 22px 64px rgba(8,34,61,.12)}
 .feature-points section,.join-points section{border:1px solid rgba(220,229,236,.75)}
+
+.ntu-section{background:#f7faf5}
+.ntu-panel{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center;padding:34px;border:1px solid rgba(198,213,203,.9);border-radius:16px;background:linear-gradient(135deg,#fff,#f2f8f3);box-shadow:0 18px 54px rgba(8,58,42,.08)}
+.ntu-panel h2{margin-bottom:14px}
+.ntu-motto{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ntu-motto section{position:relative;padding:20px 18px;border-radius:12px;background:#fff;border:1px solid #dce8df}
+.ntu-motto section::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:4px;border-radius:99px;background:linear-gradient(180deg,#0f5b3d,var(--gold))}
+.ntu-motto b{display:block;color:#0c3f2d;font-size:1.08rem}
+.ntu-motto p{margin:8px 0 0;color:#587064;font-size:.92rem}
+.home-video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.mechanical-video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.home-video-card,.mechanical-video{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 16px 46px rgba(8,34,61,.09)}
+.home-video-card>div:last-child,.mechanical-video>b{display:block;padding:16px 18px;color:var(--navy)}
+.home-video-card .text-link{margin-top:8px;font-size:.88rem}
+.home-video-card .video-frame,.mechanical-video .video-frame{overflow:hidden}
+.ntu-note{margin-top:24px;padding:18px 20px;border-left:4px solid #0f5b3d;border-radius:10px;background:#fff;color:#40584d;font-weight:700}
+.people-culture,.research-taxonomy{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.people-culture img,.research-taxonomy img{width:100%;border-radius:14px;box-shadow:0 20px 58px rgba(8,34,61,.12)}
+.research-taxonomy img{max-height:430px;object-fit:contain;background:#fff;padding:18px}
+.ai-medtech{display:grid;grid-template-columns:1fr .9fr;gap:38px;align-items:center;margin-bottom:28px}
+.ai-video-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 18px 52px rgba(8,34,61,.1)}
+.ai-video-card b{display:block;padding:16px 18px;color:var(--navy)}
+.research-application-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.research-application-list article{padding:24px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 14px 40px rgba(8,34,61,.07)}
+.research-application-list b{display:block;color:var(--navy);font-size:1.08rem;line-height:1.4}
+.research-application-list p{margin:10px 0 0;color:var(--muted)}
+.taxonomy-list{display:grid;gap:10px;margin-top:24px}
+.taxonomy-list section{padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.taxonomy-list b{display:block;color:var(--navy)}
+.taxonomy-list p{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.team-manifesto{padding:34px;border-radius:16px;background:linear-gradient(135deg,#08223d,#0f5b3d);color:#fff;box-shadow:0 22px 64px rgba(8,34,61,.14)}
+.team-manifesto p{margin:0;font-size:clamp(1.2rem,2.3vw,1.7rem);line-height:1.75}
+.team-achievement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.team-achievement-grid article{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 14px 38px rgba(8,34,61,.07)}
+.team-achievement-grid b{display:block;color:var(--navy)}
+.team-achievement-grid p{margin:8px 0 0;color:var(--muted)}
+.team-timeline{margin-top:28px;border-top:1px solid var(--line)}
+.team-timeline article{display:grid;grid-template-columns:220px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}
+.team-timeline strong{color:var(--blue)}
+.teaching-motto{margin-bottom:34px;padding:26px;border-left:5px solid var(--gold);border-radius:12px;background:#fffdf7;box-shadow:0 14px 40px rgba(8,34,61,.07)}
+.teaching-motto p{margin:0;color:var(--navy);font-size:1.15rem;font-weight:800;line-height:1.8}
+@media(max-width:1100px){.home-video-grid,.mechanical-video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:920px){.ntu-panel,.people-culture,.research-taxonomy,.ai-medtech{grid-template-columns:1fr}.ntu-motto,.team-achievement-grid,.research-application-list{grid-template-columns:1fr}.team-timeline article{grid-template-columns:1fr;gap:4px}}
+@media(max-width:620px){.home-video-grid,.mechanical-video-grid{grid-template-columns:1fr}}

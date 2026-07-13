@@ -35,6 +35,7 @@
         <h2 id="brandH"></h2>
         <p class="intro" id="brandP"></p>
         <div class="join-points" id="brandCards"></div>
+        <div class="ntu-note" id="ntuNote"></div>
       </div>
     </section>
   </main>
@@ -69,6 +70,10 @@
     brandCards.innerHTML = brand.map(x =>
       `<section><b>${tx(x[0],x[2])}</b><p>${tx(x[1],x[3])}</p></section>`
     ).join("");
+    ntuNote.innerHTML = tx(
+      "At National Taiwan University, this is also a way to practice the motto: cultivate virtue, advance learning, serve society, and care for people.",
+      "在臺灣大學，這也是實踐校訓「敦品、勵學、愛國、愛人」的一種方式：把品格、學習、社會責任與對人的關懷，放進研究與教學。"
+    );
   </script>
 </body>
 </html>

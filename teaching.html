@@ -21,6 +21,9 @@
 
     <section class="section">
       <div class="container">
+        <div class="teaching-motto">
+          <p id="teachingMotto"></p>
+        </div>
         <p class="kicker">COURSES I TEACH</p>
         <h2 id="coursesH"></h2>
         <p class="intro" id="coursesP"></p>
@@ -59,7 +62,7 @@
         en:"Semiconductor Processing and Practice",
         zh:"半導體製程與實務",
         enText:"This course introduces cleanroom practice, lithography, thin films, etching, process flow, contamination control, and the practical link between fabrication steps and device performance.",
-        zhText:"課程介紹無塵室實務、微影、薄膜、蝕刻、製程流程與污染控制，並說明製程步驟如何影響元件表現。",
+        zhText:"課程介紹半導體製程與感測器設計測試的基礎，包括無塵室實務、微影、薄膜、蝕刻、製程流程與污染控制，並說明製程步驟如何影響元件表現。",
         tags:["Cleanroom","Lithography","Thin films","Etching"],
         tagsZh:["無塵室","微影","薄膜","蝕刻"]
       },
@@ -67,17 +70,17 @@
         image:"assets/research/bess-parallel-flow-concept.png",
         en:"Fluid Mechanics",
         zh:"流體力學",
-        enText:"Students learn pressure, flow, boundary layers, dimensional analysis, and transport thinking, then connect these ideas to microfluidics, cooling systems, biological flows, and device design.",
-        zhText:"學生學習壓力、流動、邊界層、因次分析與傳輸思考，再把這些觀念連到微流體、散熱、生物流動與裝置設計。",
+        enText:"Fluid mechanics studies fluid phenomena and related mechanical behavior. The course builds pressure, flow, boundary layer, dimensional analysis, and transport concepts, then connects them to microfluidics, cooling systems, biological flows, and device design.",
+        zhText:"流體力學研究流體現象與相關力學行為，是機械與工程領域的重要基礎課程。課程希望跳出只記公式與證明的學習方式，以較直觀的方法理解壓力、流動、邊界層、因次分析與傳輸，再連到微流體、散熱、生物流動與裝置設計。",
         tags:["Pressure","Flow","Boundary layer","Transport"],
         tagsZh:["壓力","流動","邊界層","傳輸"]
       },
       {
-        image:"assets/research/lab-on-a-chip-concept.jpg",
+        image:"assets/uploads/dmf-microsystem-technology-2013.png",
         en:"Bio Lab-on-a-Chip Systems",
         zh:"生物實驗室晶片",
-        enText:"This course explains how microchannels, droplets, valves, acoustic actuation, and biosensing can turn biological samples into measurable information on a chip.",
-        zhText:"課程說明微通道、液滴、閥件、聲波驅動與生醫感測，如何把生物樣品轉化為晶片上的可量測資訊。",
+        enText:"Bio lab-on-a-chip systems integrate one or several laboratory functions onto millimetre-scale chips and handle very small liquid volumes. The course connects microfluidics, micro-total analysis systems, droplets, valves, actuation, and biosensing.",
+        zhText:"生物實驗室晶片將一個或多個實驗室功能整合到毫米尺度晶片中，處理極小體積的流體。課程連結微流體、微小全分析系統、液滴、閥件、驅動方式與生醫感測，說明如何把生物樣品轉化為晶片上的可量測資訊。",
         tags:["Microchannels","Droplets","Valves","Biosensing"],
         tagsZh:["微通道","液滴","閥件","生醫感測"]
       },
@@ -91,6 +94,10 @@
         tagsZh:["工程圖","CAD","尺寸標註","設計溝通"]
       }
     ];
+    teachingMotto.textContent = tx(
+      "The teaching spirit follows an old idea: broaden learning through knowledge, and discipline it through respect and practice.",
+      "博學于文，約之以禮：以廣博的知識打開視野，再以規範、實作與負責任的態度收斂成可用能力。"
+    );
     courses.innerHTML = courseData.map((c,i) => `
       <article class="teaching-course">
         <div class="teaching-image"><img src="${c.image}" alt="${tx(c.en,c.zh)}"></div>
