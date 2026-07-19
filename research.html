@@ -36,6 +36,7 @@
         <p class="intro" id="entryLead"></p>
         <div class="research-entry-grid" id="entryGrid"></div>
         <p class="research-entry-note" id="entryNote"></p>
+        <div class="section-action"><a class="btn primary" href="pathways.html" id="entryAction"></a></div>
       </div>
     </section>
 
@@ -72,18 +73,18 @@
   <script>
     initShell();
     const z=state.lang==="zh",t=(en,cn)=>z?cn:en;
-    title.textContent=t("Research directions from mechanisms to useful systems","從機制到有用系統的研究方向");
+    title.textContent=t("From mechanisms to useful systems","從機制到可用系統");
     lead.textContent=t(
-      "Our research grows from mechanics, mechatronic integration, and biomedical engineering. Artificial intelligence is increasingly woven into these directions as a tool for interpreting signals, improving decisions, and connecting devices with real-world use.",
-      "實驗室研究以機械、機電整合與生醫工程為核心；人工智慧則逐漸融合到各個研究面向，用來協助訊號判讀、提升決策品質，並讓裝置更接近真實場域的需求。"
+      "Mechanics, mechatronics, biomedical engineering, and AI come together to build devices that can be measured, validated, and used in real settings.",
+      "我們結合機械、機電、生醫與 AI，建立可量測、可驗證，並能走向真實場域的裝置與系統。"
     );
-    flowTitle.textContent=t("Different technologies, one research logic","不同技術，共同形成一條研究邏輯");
+    flowTitle.textContent=t("Different technologies, one shared method","不同技術，共享一套研究方法");
     flowText.textContent=t(
       "The projects may look different, but they share the same path: understand a physical or biological problem, build a device or system, measure carefully, and use data analysis or AI when it helps the result become more reliable and useful.",
       "這些研究題目外觀不同，但共享同一條路徑：理解物理或生物問題、建立裝置或系統、嚴謹量測，並在需要時導入資料分析或 AI，讓結果更可靠、更有用。"
     );
 
-    entryTitle.textContent=t("Your background can become a starting point for interdisciplinary research","從你的專長出發，進入跨領域研究");
+    entryTitle.textContent=t("Start from your strength and find a research direction","從你的專長出發，找到研究起點");
     entryLead.textContent=t(
       "Graduate students enter the department through four broad areas. The lab provides a concrete starting point for each one, then helps students connect their original strength with the other three.",
       "本系研究所新生主要從四個領域進入。實驗室讓每一種背景都能先從熟悉的專長切入，再逐步與其他三個方向整合。"
@@ -99,6 +100,7 @@
       "You do not need to arrive with all four abilities. A strong thesis usually begins with one foundation and becomes valuable by learning how to collaborate across the others.",
       "加入時不需要同時具備四種能力。好的論文通常先建立一項核心專長，再透過跨領域合作，讓研究產生真正的價值。"
     );
+    entryAction.textContent=t("Explore ways to join","查看加入方式");
 
     approachTitle.textContent=t("From physical mechanisms to evidence that can be used","從物理機制走向可被使用的工程證據");
     approachLead.textContent=t(

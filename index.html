@@ -74,6 +74,7 @@
         <h2 id="joinTitle"></h2>
         <p class="intro" id="joinLead"></p>
         <div class="join-points" id="joinPoints"></div>
+        <div class="section-action"><a class="btn primary" href="pathways.html" id="joinAction"></a></div>
       </div>
     </section>
   </main>
@@ -84,21 +85,22 @@
   <script>
     initShell();
     title.textContent = v6Text(
-      "Miniaturized chips for better technology and life",
-      "微型化晶片，更好的科技生活"
+      "Miniaturized chips for better life",
+      "微型化晶片，讓科技改善生活"
     );
+    title.classList.toggle("hero-title-en", state.lang === "en");
     lead.textContent = v6Text(
-      "We develop microfluidic chips, sensing devices, and intelligent mechatronic systems that help small-volume samples, physiological signals, and biological processes become measurable engineering evidence.",
-      "我們發展微流體晶片、感測裝置與智慧機電系統，讓小體積樣品、生理訊號與生物流程，轉化為可量測、可驗證的工程證據。"
+      "We use microfluidics, sensing, and intelligent mechatronic systems to turn small-volume samples, physiological signals, and biological processes into reliable engineering evidence.",
+      "我們以微流體、感測與智慧機電系統，將微量樣品、生理訊號與生物流程轉化為可靠的工程證據。"
     );
     researchBtn.textContent = v6Text("Research topics","研究題目");
     intlBtn.textContent = v6Text("International collaboration","國際合作與學生");
     collabBtn.textContent = v6Text("Research & industry collaboration","研究與產學合作");
 
-    ntuTitle.textContent = v6Text("Building research from the spirit of National Taiwan University","從臺灣大學精神出發的研究與教學");
+    ntuTitle.textContent = v6Text("Responsible research, rooted at NTU","以臺大精神做負責任的研究");
     ntuLead.textContent = v6Text(
-      "The lab is part of National Taiwan University and the Department of Biomechatronics Engineering. The NTU motto, \"Cultivate virtue, advance learning, love one's country, and love people,\" is reflected here as responsible research, disciplined learning, and technology that serves society.",
-      "實驗室隸屬國立臺灣大學生物機電工程學系。臺大校訓「敦品、勵學、愛國、愛人」在這裡轉化為負責任的研究、扎實的學習，以及能服務社會的科技。"
+      "At NTU Biomechatronics, the university motto becomes research integrity, disciplined learning, social responsibility, and technology designed around people.",
+      "在臺大生機系，我們將「敦品、勵學、愛國、愛人」落實為研究誠信、扎實學習、社會責任，以及以人為本的科技。"
     );
     const motto = [
       ["Cultivate virtue","Research integrity and respect for people.","敦品","重視研究誠信與對人的尊重。"],
@@ -108,10 +110,10 @@
     ];
     ntuMotto.innerHTML = motto.map(x => `<section><b>${v6Text(x[0],x[2])}</b><p>${v6Text(x[1],x[3])}</p></section>`).join("");
 
-    valueTitle.textContent = v6Text("Featured research connected to measurement, care, and production","特色研究連到量測、照護與生產流程");
+    valueTitle.textContent = v6Text("From sample preparation to intelligent sensing","從樣品處理到智慧感測");
     valueLead.textContent = v6Text(
-      "Each project starts from a bottleneck: a sample is difficult to prepare, a signal is difficult to measure, a device is difficult to stabilise, or a biological process needs better engineering control.",
-      "每個題目都從瓶頸開始：樣品難以前處理、訊號不易量測、裝置需要更穩定，或生物流程需要更好的工程控制。"
+      "Our featured systems address three recurring challenges: preparing difficult samples, measuring meaningful signals, and building devices that remain reliable in real use.",
+      "特色系統聚焦三個反覆出現的挑戰：處理困難樣品、量測有意義的訊號，以及建立能在真實情境中維持可靠的裝置。"
     );
 
     const appItems = [
@@ -130,7 +132,7 @@
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
     ).join("");
 
-    teachTitle.textContent = v6Text("Courses connect fundamentals with devices students can design, build, and explain","課程把基礎觀念連到學生能設計、製作與說明的裝置");
+    teachTitle.textContent = v6Text("From fundamentals to devices students can build and explain","從基礎觀念到可實作的工程能力");
     teachLead.textContent = v6Text(
       "Teaching covers semiconductor processing, fluid mechanics, bio lab-on-a-chip systems, and engineering graphics with computer-aided drawing.",
       "教學涵蓋半導體製程與實務、流體力學、生物實驗室晶片，以及工程圖學與電腦繪圖。"
@@ -139,14 +141,12 @@
 
     videoTitle.textContent = v6Text("See research ideas in motion","觀看研究概念如何運作");
     videoLead.textContent = v6Text(
-      "These videos connect earlier lab themes with current research: exosome microfluidics, self-powered digital microfluidics, LEGO-based AFM education, optofluidic switching, and wearable AI.",
-      "這些影片把早期研究主題與目前方向連起來：外泌體微流體、自供電數位微流體、樂高 AFM 教育展示、光流體開關，以及穿戴裝置與 AI。"
+      "Three short videos introduce exosome microfluidics, self-powered digital microfluidics, and wearable devices with AI.",
+      "三支短片介紹外泌體微流體、自供電數位微流體，以及穿戴裝置與 AI。"
     );
     const videos = [
       ["972roQFlIqo","Exosome microfluidics","外泌體微流體","research/exosome-engineering.html"],
       ["4xJ3vyuzWd0","TENG-powered DMF","TENG 自供電數位微流體","research/digital-microfluidics.html"],
-      ["1okl0gkwwUw","LEGO atomic force microscope","樂高原子力顯微鏡","research.html"],
-      ["zE-CWq-Wl2g","Digital microfluidic optical switch","數位微流體光學開關","research/digital-microfluidics.html"],
       ["CWvfrA86jak","Wearable devices and AI","穿戴裝置與 AI","research/wearable-sensors.html"]
     ];
     homeVideos.innerHTML = videos.map(v => `
@@ -155,7 +155,7 @@
         <div><b>${v6Text(v[1],v[2])}</b><a class="text-link" href="${v[3]}">${v6Text("Related topic →","相關主題 →")}</a></div>
       </article>`).join("");
 
-    joinTitle.textContent = v6Text("Four backgrounds, many ways to build meaningful research","四種專長背景，都能找到有意義的研究起點");
+    joinTitle.textContent = v6Text("Four backgrounds, one place to begin","四種專長背景，都能找到研究起點");
     joinLead.textContent = v6Text(
       "Whether you enter through mechanical engineering, mechatronics, biomedical and biological processes, or AI, you can begin with your existing strength and learn to connect it with real devices, experiments, and applications.",
       "無論你從機械、機電、生醫／生物程序或 AI 進入，都可以先從原有專長出發，再學習把它連到真實裝置、實驗與應用。"
@@ -175,6 +175,7 @@
     joinPoints.innerHTML = (state.lang === "zh" ? joinItemsZh : joinItems).map(x =>
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
     ).join("");
+    joinAction.textContent = v6Text("Explore ways to join","查看加入方式");
     load("data/v6/current-systems.json").then(d => systems.innerHTML = d.map(v6SystemCard).join(""));
   </script>
 </body>
