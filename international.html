@@ -25,19 +25,17 @@
         <h2 id="mapH"></h2>
         <p class="intro" id="mapP"></p>
         <img class="collab-map" src="assets/brand/collaboration-world-map.svg" alt="World map of international collaboration and exchange sources">
-        <div class="country-list">
-          <span>Thailand · KKU</span>
-          <span>Vietnam · HCMUT</span>
-          <span>Malaysia · Universiti Malaya</span>
-          <span>Philippines · academic exchange</span>
-          <span>Japan · academic exchange</span>
-          <span>United States · UT Austin</span>
-          <span>Canada · University of Toronto</span>
-          <span>India · IIPP / TEEP</span>
-          <span>Mongolia · MUST</span>
-        </div>
+        <div class="country-list" id="countries"></div>
         <p class="map-note" id="note"></p>
         <div class="v6-international-grid" id="stories"></div>
+      </div>
+    </section>
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">RECENT INTERNATIONAL PRESENTATIONS</p>
+        <h2 id="conferenceH"></h2>
+        <p class="intro" id="conferenceP"></p>
+        <div class="honor-timeline compact" id="conferenceTimeline"></div>
       </div>
     </section>
     <section class="section soft">
@@ -56,6 +54,27 @@
     mapH.textContent = t("A research culture with global routes","連結全球的研究文化");
     mapP.textContent = t("Students, faculty, and visiting researchers have joined the laboratory from Asia and North America. The map makes these people-to-people routes visible.","來自亞洲與北美的學生、教師與訪問研究者曾加入實驗室；這張地圖讓這些人與人之間的研究路徑被看見。");
     note.textContent = t("Markers distinguish documented hosted students, visiting scholars, or named institutional links from wider academic-exchange connections.","地圖區分已有接待紀錄、訪問學者或具名機構連結的來源，以及更廣泛的學術交流網絡。");
+    const countryData = [
+      ["Thailand · KKU","泰國 · KKU"],
+      ["Vietnam · HCMUT","越南 · HCMUT"],
+      ["Malaysia · Universiti Malaya","馬來西亞 · 馬來亞大學"],
+      ["Philippines · academic exchange","菲律賓 · 學術交流"],
+      ["Japan · academic exchange","日本 · 學術交流"],
+      ["United States · MIT / UT Austin","美國 · MIT／UT Austin"],
+      ["Canada · University of Toronto","加拿大 · 多倫多大學"],
+      ["India · IIPP / TEEP","印度 · IIPP／TEEP"],
+      ["Mongolia · MUST","蒙古 · MUST"]
+    ];
+    countries.innerHTML = countryData.map(x => `<span>${t(x[0],x[1])}</span>`).join("");
+    conferenceH.textContent = t("Students bring laboratory research to the international community","學生把實驗室研究帶向國際社群");
+    conferenceP.textContent = t("Recent presentations show a continuing path from laboratory training to international communication across microfluidics, sensing, and biomedical systems.","近期發表呈現一條持續累積的路徑：從實驗室訓練出發，將微流體、感測與生醫系統研究帶到國際會議交流。");
+    const conferenceData = [
+      ["Oct. 2026","Five posters scheduled for microTAS 2026: 3D-printed microfluidic detection, recycled-material ECR sensors, self-powered LIG sensors, and related topics.","2026 年 10 月","預計於 microTAS 2026 發表五篇海報，涵蓋 3D 列印微流體檢測、循環材料 ECR 感測器、自發電 LIG 感測器等研究。"],
+      ["Jun. 2025","Biosensors 2025: real-time microfluidic electrochemical detection and ECR pressure sensing for sports science.","2025 年 6 月","於 Biosensors 2025 發表微流體電化學即時檢測，以及 ECR 壓力感測器於運動科學的研究。"],
+      ["Jan. 2024","IEEE MEMS 2024: Dr. Rajat Subhra Karmakar presented ECR pressure sensing for posture correction and trigger-finger detection.","2024 年 1 月","Dr. Rajat Subhra Karmakar 於 IEEE MEMS 2024 發表 ECR 壓力感測器於坐姿矯正與板機指檢測的應用。"],
+      ["Feb. 2023","Transducers 2023: microfluidic cell separation and optical online real-time detection.","2023 年 2 月","於 Transducers 2023 發表微流體細胞分離與光學線上即時檢測研究。"]
+    ];
+    conferenceTimeline.innerHTML = conferenceData.map(x => `<article><time>${t(x[0],x[2])}</time><p>${t(x[1],x[3])}</p></article>`).join("");
     const rhythm = [
       ["First week","OIA check-in, lab safety briefing, desk setup, project kickoff, and instrument access preparation.","第一週","完成 OIA 報到、實驗室安全說明、座位安排、專題啟動與儀器使用準備。"],
       ["Research rhythm","Hands-on experiments, group meetings, journal discussion, shared laboratory notes, and clear deliverables.","研究節奏","動手實驗、團隊會議、期刊討論、共享實驗紀錄與清楚的交付成果。"],
