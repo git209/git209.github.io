@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700,800&family=Merriweather:wght@700&family=Noto+Sans+TC:wght@400;600;700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="v6.css">
 </head>
 <body>
   <div id="header"></div>
@@ -24,25 +25,17 @@
         <h2 id="mapTitle"></h2>
         <p class="intro" id="mapText"></p>
         <img class="collab-map" src="assets/brand/collaboration-world-map.svg" alt="World map of international student and collaboration routes">
-        <div class="country-list">
-          <span>Thailand · KKU</span>
-          <span>India · IIPP / TEEP</span>
-          <span>Mongolia · MUST</span>
-          <span>United States · UT Austin</span>
-          <span>Canada · U of T</span>
-          <span>Vietnam · HCMUT</span>
-          <span>Malaysia · UM</span>
-          <span>Japan / Philippines · exchange network</span>
-        </div>
-        <div class="visit-grid">
-          <article><b>Thailand</b><p>Khon Kaen University faculty and students visited NTU in 2025; the exchange continues with Medical Technology students in 2026.</p></article>
-          <article><b>India</b><p>Visiting students connect flexible sensing and real-time physiological monitoring through India-Taiwan research routes such as IIPP / TEEP.</p></article>
-          <article><b>Research network</b><p>Mongolia, North America, and Southeast Asia links bring new questions, methods, and people into the lab.</p></article>
-        </div>
+        <div class="country-list" id="countries"></div>
+        <div class="visit-grid" id="visits"></div>
       </div>
     </section>
     <section class="section soft">
-      <div class="container story-grid" id="cards"></div>
+      <div class="container">
+        <p class="kicker">WAYS TO COLLABORATE</p>
+        <h2 id="partnerTitle"></h2>
+        <p class="intro" id="partnerLead"></p>
+        <div class="story-grid" id="cards"></div>
+      </div>
     </section>
   </main>
   <div id="footer"></div>
@@ -50,10 +43,29 @@
   <script src="app.js"></script>
   <script>
     initShell();
-    title.textContent = tx("Collaboration for technical breakthroughs and student growth","為技術突破與學生培育而合作");
-    lead.textContent = tx("We seek collaborations where a real problem can sharpen the research, open a validation route, and give Taiwan and international students a chance to build useful evidence.","我們尋找能讓真實問題推進研究、開啟驗證路徑，並讓台灣與國際學生建立有用證據的合作。");
+    title.textContent = tx("Research and industry collaboration","研究與產學合作");
+    lead.textContent = tx("We work with academic, clinical, and industry partners when a real problem can sharpen the research, open a validation route, and help useful technology move beyond the laboratory.","當真實問題能推進研究、開啟驗證路徑，並讓有用的技術走出實驗室時，我們期待與學術、臨床及產業夥伴合作。");
     mapTitle.textContent = tx("International routes for students and research questions","連結學生與研究問題的國際路徑");
     mapText.textContent = tx("From short visits to multi-month research stays, students and colleagues join projects through safety training, hands-on work, weekly discussion, and shared responsibility for a real research question.","從短期參訪到數個月的研究駐點，學生與夥伴透過安全訓練、實作、定期討論與共同負責真實研究問題，加入專題。");
+    const countryData = [
+      ["Thailand · KKU","泰國 · KKU"],
+      ["India · IIPP / TEEP","印度 · IIPP / TEEP"],
+      ["Mongolia · MUST","蒙古 · MUST"],
+      ["United States · UT Austin","美國 · UT Austin"],
+      ["Canada · U of T","加拿大 · U of T"],
+      ["Vietnam · HCMUT","越南 · HCMUT"],
+      ["Malaysia · UM","馬來西亞 · UM"],
+      ["Japan / Philippines · exchange network","日本／菲律賓 · 交流網絡"]
+    ];
+    countries.innerHTML = countryData.map(x => `<span>${tx(x[0],x[1])}</span>`).join("");
+    const visitData = [
+      ["Thailand","泰國","Khon Kaen University faculty and students visited NTU in 2025; the exchange continues with Medical Technology students in 2026.","Khon Kaen University 師生於 2025 年訪問臺大，並於 2026 年延續醫學技術學生交流。"],
+      ["India","印度","Visiting students connect flexible sensing and real-time physiological monitoring through India–Taiwan programs such as IIPP and TEEP.","訪問學生透過 IIPP、TEEP 等臺印計畫，參與柔性感測與即時生理監測研究。"],
+      ["Research network","研究網絡","Connections across Mongolia, North America, and Southeast Asia bring new questions, methods, and people into the lab.","蒙古、北美與東南亞的合作網絡，持續為實驗室帶來新的問題、方法與人才。"]
+    ];
+    visits.innerHTML = visitData.map(x => `<article><b>${tx(x[0],x[1])}</b><p>${tx(x[2],x[3])}</p></article>`).join("");
+    partnerTitle.textContent = tx("Partnerships built around evidence and implementation","以證據與落地需求為核心的合作");
+    partnerLead.textContent = tx("International student hosting is introduced on the Students & Global page. Here, the focus is how partners and the lab can define questions, validate systems, and translate results together.","國際學生的參與方式另見「國際合作與學生」頁；本頁聚焦合作夥伴如何與實驗室共同定義問題、驗證系統並推進成果轉譯。");
     const a = [
       ["Academic collaboration","學術合作","Joint questions, visiting students, shared methods, and co-developed evidence.","共同問題、訪問學生、共享方法與一起建立的證據。"],
       ["Clinical collaboration","臨床合作","Patient-facing constraints help sensing systems move from signal quality to useful decisions.","臨床限制協助感測系統從訊號品質走向有用決策。"],

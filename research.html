@@ -20,42 +20,40 @@
       </div>
     </section>
 
+    <section class="section soft">
+      <div class="container">
+        <p class="kicker">FEATURED RESEARCH DIRECTIONS</p>
+        <h2 id="flowTitle"></h2>
+        <p class="intro" id="flowText"></p>
+        <div id="list" class="grid research-grid"></div>
+      </div>
+    </section>
+
+    <section class="section research-entry-section">
+      <div class="container">
+        <p class="kicker">FOUR WAYS TO ENTER THE LAB</p>
+        <h2 id="entryTitle"></h2>
+        <p class="intro" id="entryLead"></p>
+        <div class="research-entry-grid" id="entryGrid"></div>
+        <p class="research-entry-note" id="entryNote"></p>
+      </div>
+    </section>
+
     <section class="section">
-      <div class="container research-taxonomy">
-        <div>
-          <p class="kicker">RESEARCH CLASSIFICATION</p>
-          <h2 id="classH"></h2>
-          <p class="intro" id="classP"></p>
-          <div class="taxonomy-list" id="taxonomy"></div>
-        </div>
-        <img src="assets/uploads/research-category-sketch.png" alt="Teaching and research classification sketch">
+      <div class="container">
+        <p class="kicker">A SHARED RESEARCH APPROACH</p>
+        <h2 id="approachTitle"></h2>
+        <p class="intro" id="approachLead"></p>
+        <div class="research-approach" id="approach"></div>
       </div>
     </section>
 
     <section class="section soft">
       <div class="container">
-        <p class="kicker">MECHANICAL SYSTEMS FROM THE EARLY LAB SITE</p>
-        <h2 id="mechanicalH"></h2>
-        <p class="intro" id="mechanicalP"></p>
-        <div class="application-grid" id="mechanicalItems"></div>
-        <div class="mechanical-video-grid" id="mechanicalVideos"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container ai-medtech">
-        <div>
-          <p class="kicker">AI & INNOVATIVE MEDICAL DEVICES</p>
-          <h2 id="aiH"></h2>
-          <p class="intro" id="aiP"></p>
-        </div>
-        <div class="ai-video-card">
-          <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/CWvfrA86jak" title="Wearable devices and AI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <b id="aiVideoTitle"></b>
-        </div>
-      </div>
-      <div class="container">
-        <div class="research-application-list" id="aiItems"></div>
+        <p class="kicker">SELECTED DEMONSTRATIONS</p>
+        <h2 id="demoTitle"></h2>
+        <p class="intro" id="demoLead"></p>
+        <div class="mechanical-video-grid" id="researchVideos"></div>
       </div>
     </section>
 
@@ -67,18 +65,6 @@
         <img class="technology-map" src="assets/brand/technology-map.svg" alt="Technology map connecting research directions">
       </div>
     </section>
-
-    <section class="section soft">
-      <div class="container">
-        <p class="kicker">CONNECTED DIRECTIONS</p>
-        <h2 id="flowTitle"></h2>
-        <p class="intro" id="flowText"></p>
-        <div class="research-flow six-flow">
-          <span>Digital microfluidics</span><span>Acoustofluidics</span><span>Wearables</span><span>AI healthcare</span><span>Soft robotics</span><span>Exosome engineering</span>
-        </div>
-        <div id="list" class="grid research-grid"></div>
-      </div>
-    </section>
   </main>
   <div id="footer"></div>
   <script>window.BASE="";</script>
@@ -88,65 +74,62 @@
     const z=state.lang==="zh",t=(en,cn)=>z?cn:en;
     title.textContent=t("Research directions from mechanisms to useful systems","從機制到有用系統的研究方向");
     lead.textContent=t(
-      "The lab classifies research by the engineering ability it builds: mechanical systems, mechatronic integration, artificial intelligence, biological processes, and bioinspired technology.",
-      "實驗室依照研究所建立的工程能力進行分類：機械系統、機電整合、人工智慧、生物程序與仿生科技。"
+      "Our research grows from mechanics, mechatronic integration, and biomedical engineering. Artificial intelligence is increasingly woven into these directions as a tool for interpreting signals, improving decisions, and connecting devices with real-world use.",
+      "實驗室研究以機械、機電整合與生醫工程為核心；人工智慧則逐漸融合到各個研究面向，用來協助訊號判讀、提升決策品質，並讓裝置更接近真實場域的需求。"
     );
-    classH.textContent=t("A simple map for teaching and research","教學與研究的簡單分類圖");
-    classP.textContent=t(
-      "The categories help visitors read the lab more easily: some projects begin with fluidic or mechanical systems, some integrate sensors and actuation, some rely on AI interpretation, and some focus on biological workflows or bioinspired design.",
-      "這些分類幫助讀者更容易理解實驗室：有些題目從流體或機械系統出發，有些整合感測與驅動，有些依賴 AI 判讀，有些聚焦生物流程或仿生設計。"
+    flowTitle.textContent=t("Different technologies, one research logic","不同技術，共同形成一條研究邏輯");
+    flowText.textContent=t(
+      "The projects may look different, but they share the same path: understand a physical or biological problem, build a device or system, measure carefully, and use data analysis or AI when it helps the result become more reliable and useful.",
+      "這些研究題目外觀不同，但共享同一條路徑：理解物理或生物問題、建立裝置或系統、嚴謹量測，並在需要時導入資料分析或 AI，讓結果更可靠、更有用。"
     );
-    const cats=[
-      ["Mechanical systems","Droplets, filtration, flow control, thermal-fluid design.","機械系統","液滴、過濾、流體控制與熱流設計。"],
-      ["Mechatronic integration","Sensors, actuators, microfabrication, and system prototypes.","機電整合","感測器、致動器、微製程與系統原型。"],
-      ["Artificial intelligence","Signal interpretation, patient-aware prediction, and data workflow.","人工智慧","訊號判讀、個人化預測與資料流程。"],
-      ["Biological processes","Samples, cells, exosomes, molecular assays, and bio-analysis.","生物程序","樣品、細胞、外泌體、分子檢測與生物分析。"],
-      ["Bioinspired technology","Soft robotics, tactile sensing, and adaptive interaction.","仿生科技","軟性機器人、觸覺感測與適應性互動。"]
-    ];
-    taxonomy.innerHTML=cats.map(x=>`<section><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></section>`).join("");
 
-    mechanicalH.textContent=t("Mechanical systems: early themes that still shape current research","機械系統：延續至今的早期研究主題");
-    mechanicalP.textContent=t(
-      "The earlier lab website grouped several projects under mechanical systems. They remain useful for explaining how the lab moves from physical mechanisms to chip-scale systems.",
-      "早期實驗室網站將多個題目放在機械系統分類下；這些題目仍適合說明實驗室如何從物理機制走向晶片尺度系統。"
+    entryTitle.textContent=t("Your background can become a starting point for interdisciplinary research","從你的專長出發，進入跨領域研究");
+    entryLead.textContent=t(
+      "Graduate students enter the department through four broad areas. The lab provides a concrete starting point for each one, then helps students connect their original strength with the other three.",
+      "本系研究所新生主要從四個領域進入。實驗室讓每一種背景都能先從熟悉的專長切入，再逐步與其他三個方向整合。"
     );
-    const mech=[
-      ["Exosome vortex filtration","A fluidic preparation route for extracellular vesicle handling and enrichment.","外泌體漩渦過濾器","用流體系統處理與富集胞外囊泡的製備路徑。"],
-      ["Electro-controlled digital microfluidics","Programmable droplet motion for sample preparation and molecular workflows.","電控數位微流體","用可程式化液滴操作支援樣品前處理與分子檢測流程。"],
-      ["Liquid-driven optical elements","Thermocapillary and fluidic effects used to tune optical behavior.","液體驅動光學元件","利用熱毛細與流體效應調控光學行為。"],
-      ["LEGO for nanotechnology education","Physical models and hands-on demonstrations that help students understand nanoscale tools.","樂高與奈米科技教育","用實體模型與動手展示協助學生理解奈米尺度工具。"]
+    const entryItems=[
+      ["Mechanical engineering","Begin with fluid mechanics, droplet dynamics, filtration, heat transfer, structures, or soft materials. Grow toward microfluidic and biomedical devices.","機械","可從流體力學、液滴動力、過濾、熱傳、結構或軟性材料出發，再延伸到微流體與生醫裝置。"],
+      ["Mechatronic integration","Begin with sensors, actuation, circuits, fabrication, control, or system integration. Grow toward complete experimental and field-ready platforms.","機電整合","可從感測、致動、電路、製程、控制或系統整合出發，再建立完整的實驗與場域驗證平台。"],
+      ["Biomedical / biological processes","Begin with samples, cells, exosomes, molecular assays, physiology, or clinical needs. Grow toward repeatable and measurable engineering workflows.","生醫／生物程序","可從樣品、細胞、外泌體、分子檢測、生理或臨床需求出發，再建立可重複、可量測的工程流程。"],
+      ["AI and data science","Begin with signal processing, statistics, machine learning, or model validation. Grow by working with real sensors, experiments, and domain constraints—not data alone.","AI 與資料科學","可從訊號處理、統計、機器學習或模型驗證出發，並結合真實感測器、實驗資料與領域限制，而不只停留在資料分析。"]
     ];
-    mechanicalItems.innerHTML=mech.map(x=>`<section><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></section>`).join("");
-    const mechVideos=[
+    entryGrid.innerHTML=entryItems.map((x,i)=>`<article><span>0${i+1}</span><h3>${t(x[0],x[2])}</h3><p>${t(x[1],x[3])}</p></article>`).join("");
+    entryNote.textContent=t(
+      "You do not need to arrive with all four abilities. A strong thesis usually begins with one foundation and becomes valuable by learning how to collaborate across the others.",
+      "加入時不需要同時具備四種能力。好的論文通常先建立一項核心專長，再透過跨領域合作，讓研究產生真正的價值。"
+    );
+
+    approachTitle.textContent=t("From physical mechanisms to evidence that can be used","從物理機制走向可被使用的工程證據");
+    approachLead.textContent=t(
+      "Rather than separating projects into rigid categories, we use one shared development approach across microfluidics, sensing, biomedical systems, AI, and soft machines.",
+      "我們不以僵硬分類切割題目，而是讓微流體、感測、生醫系統、AI 與軟性機器人共享同一套研究方法。"
+    );
+    const approachItems=[
+      ["01 · Understand","Start with the fluidic, mechanical, biological, or clinical mechanism that limits current practice.","01 · 理解問題","先釐清限制現有方法的流體、機械、生物或臨床機制。"],
+      ["02 · Build","Turn the mechanism into a chip, sensor, actuator, experimental platform, or integrated prototype.","02 · 建立裝置","把機制轉化為晶片、感測器、致動器、實驗平台或整合原型。"],
+      ["03 · Measure","Collect traceable data and test whether the system remains reliable under realistic conditions.","03 · 嚴謹量測","取得可追溯的資料，並檢驗系統在接近真實條件下是否仍然可靠。"],
+      ["04 · Interpret and translate","Use analysis or AI when it adds value, then connect the evidence to health, production, or everyday use.","04 · 判讀與轉譯","在真正有幫助時導入資料分析或 AI，再把證據連到健康、生產或日常應用。"]
+    ];
+    approach.innerHTML=approachItems.map(x=>`<article><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></article>`).join("");
+
+    demoTitle.textContent=t("See selected ideas in motion","觀看代表性研究概念如何運作");
+    demoLead.textContent=t(
+      "These short demonstrations connect earlier foundations with current directions—from droplet control and exosome processing to nanoscale teaching and wearable AI.",
+      "這些短片把早期基礎與目前研究方向連起來，涵蓋液滴控制、外泌體處理、奈米尺度教學，以及穿戴裝置與 AI。"
+    );
+    const researchVideoData=[
       ["972roQFlIqo","Exosome microfluidics","外泌體微流體"],
       ["4xJ3vyuzWd0","TENG-powered digital microfluidics","TENG 自供電數位微流體"],
       ["1okl0gkwwUw","LEGO atomic force microscope","樂高原子力顯微鏡"],
-      ["zE-CWq-Wl2g","Digital microfluidic optical switch","數位微流體光學開關"]
+      ["CWvfrA86jak","Wearable devices and AI","穿戴裝置與 AI"]
     ];
-    mechanicalVideos.innerHTML=mechVideos.map(v=>`<article class="mechanical-video"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${v[0]}" title="${t(v[1],v[2])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><b>${t(v[1],v[2])}</b></article>`).join("");
-
-    aiH.textContent=t("AI as a bridge from sensing to prediction and process control","AI 作為感測、預測與製程控制之間的橋樑");
-    aiP.textContent=t(
-      "A recurring goal is to move from passive data collection after symptoms or failures occur toward timely sensing, reliable data, and machine-learning-assisted interpretation.",
-      "我們希望從症狀或問題發生後才被動收集資料，逐步走向即時感測、可靠資料與機器學習輔助判讀。"
-    );
-    aiVideoTitle.textContent=t("Wearable devices and AI","穿戴裝置與 AI 的結合");
-    const aiApps=[
-      ["Clinical real-time testing and prognosis","Innovative medical devices can combine convenient point-of-care sensing, reliable clinical datasets, and machine learning to support precision-medicine research and future decision support.","臨床即時檢測與預後的數位醫療系統","創新醫材可結合便利的即時檢測設備、可靠臨床資料與機器學習，支援精準醫療研究與未來決策輔助。"],
-      ["Smart process monitoring for green factories","Sensors, IoT, data analytics, and AI can monitor manufacturing processes, predict abnormalities, improve yield, and support energy-saving operation.","綠色工廠智慧製程監控","感測器、物聯網、資料分析與 AI 可監控制程、預測異常、提升良率，並支援節能與減排。"],
-      ["Breeding and SNP-based screening","Lab-on-a-chip systems can integrate cell lysis, amplification, melting-temperature analysis, and genetic-variant detection for future high-throughput animal-breeding applications.","經濟動物育種與 SNP 檢測","生物實驗室晶片可整合細胞溶解、核酸擴增、解鍊溫度分析與基因變異檢測，未來可支援高通量育種與品種改良。"]
-    ];
-    aiItems.innerHTML=aiApps.map(x=>`<article><b>${t(x[0],x[2])}</b><p>${t(x[1],x[3])}</p></article>`).join("");
+    researchVideos.innerHTML=researchVideoData.map(v=>`<article class="mechanical-video"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${v[0]}" title="${t(v[1],v[2])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><b>${t(v[1],v[2])}</b></article>`).join("");
 
     mapTitle.textContent=t("From basic science to useful decisions","從基礎科學走向有用決策");
     mapText.textContent=t(
       "The directions share one development logic: understand a physical mechanism, make a novel device, collect useful data reliably, analyse the evidence, and create a path toward better health and everyday life.",
       "各研究方向共享一條發展邏輯：理解物理機制、做出新穎元件、可靠地取得有用資料、分析證據，並走向改善健康與日常生活的應用。"
-    );
-    flowTitle.textContent=t("Different technologies, a shared contribution","不同技術，共同貢獻");
-    flowText.textContent=t(
-      "Digital microfluidics and acoustofluidics control samples; exosome engineering develops a distinct biological preparation route; wearable sensors capture life outside the laboratory; AI helps interpret complex signals; and soft robotics brings sensing into safe physical action.",
-      "數位微流體與聲流體控制樣品；外泌體工程發展獨立的生物製備路徑；穿戴式感測捕捉實驗室外的生活訊號；AI 協助解讀複雜資料；軟性機器人則把感測帶入安全的實體行動。"
     );
     load("data/research.json").then(d=>list.innerHTML=d.map(researchCard).join(""));
   </script>

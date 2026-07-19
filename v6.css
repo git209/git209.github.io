@@ -59,6 +59,18 @@
 .research-application-list article{padding:24px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 14px 40px rgba(8,34,61,.07)}
 .research-application-list b{display:block;color:var(--navy);font-size:1.08rem;line-height:1.4}
 .research-application-list p{margin:10px 0 0;color:var(--muted)}
+.research-approach{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.research-approach article{position:relative;padding:26px 22px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 14px 40px rgba(8,34,61,.07)}
+.research-approach article::before{content:"";position:absolute;left:22px;right:22px;top:0;height:4px;border-radius:0 0 99px 99px;background:linear-gradient(90deg,var(--gold),var(--teal))}
+.research-approach b{display:block;color:var(--navy);font-size:1.08rem}
+.research-approach p{margin:10px 0 0;color:var(--muted)}
+.research-entry-section{background:linear-gradient(135deg,#f7fafc,#f3f8f5)}
+.research-entry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.research-entry-grid article{padding:26px 22px;border:1px solid rgba(205,218,227,.9);border-radius:14px;background:#fff;box-shadow:0 16px 44px rgba(8,34,61,.08)}
+.research-entry-grid span{display:inline-flex;color:var(--gold);font-size:.82rem;font-weight:900;letter-spacing:.12em}
+.research-entry-grid h3{margin:10px 0;color:var(--navy);font-size:1.16rem;line-height:1.35}
+.research-entry-grid p{margin:0;color:var(--muted)}
+.research-entry-note{margin:20px 0 0;padding:18px 20px;border-left:4px solid var(--teal);border-radius:10px;background:#fff;color:var(--navy);font-weight:750}
 .taxonomy-list{display:grid;gap:10px;margin-top:24px}
 .taxonomy-list section{padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:#fff}
 .taxonomy-list b{display:block;color:var(--navy)}
@@ -83,5 +95,5 @@
 .honor-timeline p{margin:0;color:var(--muted)}
 .honor-timeline.compact article{grid-template-columns:140px 1fr}
 @media(max-width:1100px){.home-video-grid,.mechanical-video-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:920px){.ntu-panel,.people-culture,.research-taxonomy,.ai-medtech{grid-template-columns:1fr}.ntu-motto,.team-achievement-grid,.research-application-list{grid-template-columns:1fr}.team-timeline article,.honor-timeline article,.honor-timeline.compact article{grid-template-columns:1fr;gap:4px}.secondary-link{margin-left:0}}
+@media(max-width:920px){.ntu-panel,.people-culture,.research-taxonomy,.ai-medtech{grid-template-columns:1fr}.ntu-motto,.team-achievement-grid,.research-application-list,.research-approach,.research-entry-grid{grid-template-columns:1fr}.team-timeline article,.honor-timeline article,.honor-timeline.compact article{grid-template-columns:1fr;gap:4px}.secondary-link{margin-left:0}}
 @media(max-width:620px){.home-video-grid,.mechanical-video-grid{grid-template-columns:1fr}}

@@ -11,8 +11,10 @@ Chinese homepage message: **微型化晶片，更好的科技生活**
 - Organize the home page around the main statement, featured research, application fields, research videos, teaching, and team pathways.
 - Present research and teaching as one consistent attitude: define a real problem, build a device, measure carefully, revise honestly, and communicate evidence.
 - Keep V6's research assets, watermarked images, teaching courses, publications, and collaboration pages.
-- Add NTU identity and motto concepts, team culture and alumni outcomes, research classification, and selected YouTube research videos.
-- Integrate legacy lab-site themes such as exosome vortex filtration, electro-controlled digital microfluidics, liquid-driven optical elements, LEGO AFM education, AI medical devices, green process monitoring, and SNP/breeding applications.
+- Add NTU identity and motto concepts, team culture and alumni outcomes, a shared research approach, and selected YouTube research videos.
+- Connect earlier lab foundations with current directions through selected demonstrations, without presenting them as a separate legacy category.
+- Keep international student pathways distinct from academic, clinical, and industry collaboration.
+- Present mechanical engineering, mechatronic integration, biomedical/biological processes, and AI as four welcoming student entry points that converge in interdisciplinary projects.
 
 Upload the contents directly to the GitHub Pages repository root.
 

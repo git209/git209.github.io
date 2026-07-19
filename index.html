@@ -93,7 +93,7 @@
     );
     researchBtn.textContent = v6Text("Research topics","研究題目");
     intlBtn.textContent = v6Text("International collaboration","國際合作與學生");
-    collabBtn.textContent = v6Text("Industry collaboration","產學合作");
+    collabBtn.textContent = v6Text("Research & industry collaboration","研究與產學合作");
 
     ntuTitle.textContent = v6Text("Building research from the spirit of National Taiwan University","從臺灣大學精神出發的研究與教學");
     ntuLead.textContent = v6Text(
@@ -155,20 +155,22 @@
         <div><b>${v6Text(v[1],v[2])}</b><a class="text-link" href="${v[3]}">${v6Text("Related topic →","相關主題 →")}</a></div>
       </article>`).join("");
 
-    joinTitle.textContent = v6Text("Students who want to connect engineering with life systems are welcome","歡迎想把工程連到生命系統的同學加入");
+    joinTitle.textContent = v6Text("Four backgrounds, many ways to build meaningful research","四種專長背景，都能找到有意義的研究起點");
     joinLead.textContent = v6Text(
-      "The team is a good fit for Taiwan and international students who want to connect mechanical engineering, mechatronics, biomedical engineering, data science, and hands-on device development.",
-      "如果你是台灣或國際學生，想把機械、機電、生醫工程、數據科學與動手製作裝置連在一起，這裡會有適合你練習與成長的題目。"
+      "Whether you enter through mechanical engineering, mechatronics, biomedical and biological processes, or AI, you can begin with your existing strength and learn to connect it with real devices, experiments, and applications.",
+      "無論你從機械、機電、生醫／生物程序或 AI 進入，都可以先從原有專長出發，再學習把它連到真實裝置、實驗與應用。"
     );
     const joinItems = [
-      ["Mechanical / mechatronics","Design mechanisms, fixtures, microfluidic structures, sensors, and test platforms."],
-      ["Biomedical engineering","Connect device output to cells, fluids, physiological signals, rehabilitation, or clinical questions."],
-      ["Data science","Turn measured signals into analysis, validation, models, and decisions that can be checked."]
+      ["Mechanical engineering","Study fluids, droplets, filtration, thermal transport, structures, and soft-machine mechanics."],
+      ["Mechatronic integration","Build sensors, actuators, circuits, microfabricated devices, control systems, and test platforms."],
+      ["Biomedical / biological processes","Connect devices with samples, cells, exosomes, physiological signals, molecular assays, and clinical workflows."],
+      ["AI and data science","Turn measured signals into validated models, interpretable predictions, and decisions that can be checked."]
     ];
     const joinItemsZh = [
-      ["機械 / 機電","設計機構、治具、微流體結構、感測器與測試平台。"],
-      ["生醫工程","把裝置輸出連到細胞、流體、生理訊號、復健或臨床問題。"],
-      ["數據科學","把量測訊號轉成分析、驗證、模型與可以被檢查的決策。"]
+      ["機械","研究流體、液滴、過濾、熱傳、結構與軟性機器人的力學問題。"],
+      ["機電整合","建立感測器、致動器、電路、微製程元件、控制系統與測試平台。"],
+      ["生醫／生物程序","把裝置連到樣品、細胞、外泌體、生理訊號、分子檢測與臨床流程。"],
+      ["AI 與資料科學","把量測訊號轉化為經過驗證、可解釋且可以被檢查的模型與決策。"]
     ];
     joinPoints.innerHTML = (state.lang === "zh" ? joinItemsZh : joinItems).map(x =>
       `<section><b>${x[0]}</b><p>${x[1]}</p></section>`
